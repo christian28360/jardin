@@ -1,0 +1,32 @@
+//----------------------------------------------------------------------------//
+// script de recommandation de site - script fait par Romain Laferté
+// disponible sur http://www.worldcinemag.com/
+// version : 1.0
+// date : 10/05/03
+// merci de m'envoyer un mail à romain@worldcinemag.com pour me signaler 
+// l'utilisation de ce script et de laisser les liens vers le site.
+// Merci de votre compréhension.
+//----------------------------------------------------------------------------//
+
+Bonjour,
+ce script très simple et très complet de recommandation de site va vous permettre 
+de gagner des visiteurs. Les visiteurs de votre site vont pouvoir le recommander
+à leurs amis en leur envoyant en plus un petit message dans le mail.
+De plus vous recevrez automatiquement un mail pour savoir les recommandations faites !
+et dedans il y aura les emails, noms du destinataire et du receveur ainsi que le message
+laissé.
+
+Ce script est entièrement configurable pour pouvoir l'adapter à votre site !
+
+pour commencer éditer le fichier define.inc.php avec votre éditeur préféré (edit plus
+fait très bien l'affaire) puis remplacer les valeurs par celles que vous voulez.
+Si vous le voulez rennomer le fichier index.php pour l'adapter à votre site.
+
+Et c'est tout ! pas besoin de changer autre chose, il vous reste juste à transférer
+le tout sur votre site !
+
+si vous avez des problèmes : romain@worldcinemag.com
+
+A bientôt,
+romain Laferté.
+http://www.worldcinemag.com

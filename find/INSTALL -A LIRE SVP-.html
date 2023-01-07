@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<TITLE>a Blork Engine - Documentation</TITLE>
+</HEAD>
+<BODY>
+
+<STYLE>
+A:link {
+	TEXT-DECORATION: none; color:#000000; 
+}
+A:visited {
+	TEXT-DECORATION: none; color:#000000; 
+}
+A:active {
+	TEXT-DECORATION: none; color:#000000; 
+} 
+A:hover {
+	TEXT-DECORATION: none; color:#000000; font-weight:bold; 
+} 
+A.retour {
+	TEXT-DECORATION: none; color:#000000; font-size:10pt; 
+} 
+BODY {
+	COLOR: #000000; font-family:verdana; font-size:10pt; 
+} 
+TD.texte {
+	COLOR: #000000; font-family:verdana; font-size:11pt; 
+} 
+.surligne {
+	BACKGROUND: #ffe020; COLOR: #000000; TEXT-DECORATION: none; font-weight: bold; 
+} 
+.titre {
+	COLOR: #000000; font-family:arial; font-size:24pt; font-weight: bold; 
+} 
+.maj {
+	COLOR: #000000; font-family:arial; font-size:10pt; 
+}
+.rubrique {
+	COLOR: #000000; font-family:verdana; font-size:14pt; font-weight: bold; 
+} 
+</STYLE>
+
+
+<!-- TITRE --> 
+
+<A name="top"></A>
+<span class="titre">
+////////////////////////////////////////////// <br />
+a Blork engine - Documentation <br />
+</span>
+<span class="maj">
+Dernière mise à jour le 
+
+10/02/2008 
+
+par zulios.<br />
+
+Pour retrouver la dernière version de la documentation merci de visiter le site officiel :<br />
+<A href="http://engine.blork.net" target="_blank">http://engine.blork.net</A>
+<br />
+</span>
+<span class="titre">
+////////////////////////////////////////////// <br />
+</span>
+
+<!-- FIN DU TITRE -->
+
+
+<br /><br /><br />
+
+
+<!-- DEBUT TABLEAU AVEC RUBRIQUES -->
+
+<TABLE width="600" border="0" cellpadding="0" cellspacing="0">
+<TR><TD class="texte">
+
+
+<!-- SOMMAIRE -->
+
+<p align="justify">
+/////////////// <span class="rubrique">Sommaire</span> ///////////////<br />
+// <br />
+// <A href="#quoi">C'est quoi "a Blork engine" ?</A> <br />
+// <A href="#fonctions">Principales fonctions / Nouveautés</A> <br />
+// <A href="#install">Installation / Mise à jour</A> <br />
+// <A href="#problemo">Que faire en cas de problème / bug ?</A> <br />
+// <br />
+////////////////////////////////////////////// <br />
+</p>
+
+<br /><br />
+
+<!-- C'EST QUOI A BLORK ENGINE -->
+
+<p align="justify">
+<A name="quoi"></A>
+////////////////////////////////////////////// <br />
+<span class="rubrique">C'est quoi "a Blork engine" ?</span> <br />
+// <A href="#top" class="retour">Retour au sommaire</A><br /> 
+
+<br />
+// a Blork engine est un script écrit en PHP qui permet d'ajouter 
+un <span class="surligne">moteur de recherche</span> à votre site. Il n'utilise ni indexation, ni base de données. 
+Vous n'aurez donc rien à faire, <span class="surligne">le script fonctionne tout seul une fois installé.</span> 
+Cela signifie également que tous vos fichiers seront scannés à chaque recherche, ce qui est plus lent 
+et consomme beaucoup de ressources; par conséquent le script est plutôt recommandé pour des sites 
+de petite ou moyenne taille. Pour de gros sites, il est indispensable d'utiliser un script avec indexation des fichiers 
+afin de limiter la consommation des ressources du serveur.
+<br /><br />
+
+// <span class="surligne">a Blork engine est distibué sous license GNU GPL</span>. 
+Une copie de cette license se trouve dans l'archive du script. 
+Vous pouvez <A href="license_GNU_GPL.html" target="_blank">consulter les termes officiels de cette license (en anglais) 
+en cliquant ici</A>. Une traduction non officielle en français de cette license est disponible 
+sur <A href="http://www.gnu.org/licenses/translations.html" target="_blank">le site de GNU (cliquez ici)</A>.
+
+<br /><br />
+// <A href="#top" class="retour">Retour au sommaire</A><br />
+////////////////////////////////////////////// <br />
+</p>
+
+<br />
+
+
+<!-- FONCTIONS -->
+
+<p align="justify">
+<A name="fonctions"></A>
+////////////////////////////////////////////// <br />
+<span class="rubrique">Principales fonctions / nouveautés</span> <br />
+// <A href="#top" class="retour">Retour au sommaire</A><br /> 
+
+<dl>
+<dt> // Recherche sur une expression exacte 
+<dd>&nbsp; 
+<dt> // Recherche sur plusieurs mots, jusqu'à 9 mots maximum (nouveauté v0.3) 
+<dd>&nbsp; 
+<dt> // Recherche de fichiers images d'après leur nom 
+<dd>&nbsp; 
+<dt> // Scan des sous-dossiers (nouveauté v0.3 : plus de limite sur le nombre de niveaux de sous-dossier scannés) 
+<dd>&nbsp; 
+<dt> // Possibilité d'exclure des fichiers de la recherche 
+<dd>&nbsp; 
+<dt> // Possibilité d'exclure des mots de la recherche (nouveauté v0.3) 
+<dd>&nbsp; 
+<dt> // Classement des résultats par pertinence (nouveauté v0.3 : pertinence plus précise) 
+<dd>&nbsp; 
+<dt> // Support des pseudo-frames 
+<dd>&nbsp; 
+<dt> // Possibilité de personnaliser le script à l'aide de deux fichiers placés avant et après le corps du script
+<dd>&nbsp; 
+<dt> // Debug mode (nouveauté v0.3) 
+<dd>&nbsp; 
+<dt> // Utilisation des sessions pour un affichage plus rapide en cas d'actualisation de la page 
+ou de passage à la page de résultats précédents / suivants (nouveauté v0.3)  
+</dl>
+
+// <A href="#top" class="retour">Retour au sommaire</A><br />
+////////////////////////////////////////////// <br />
+</p>
+
+
+<br />
+
+
+<!-- INSTALL / MAJ -->
+
+<p align="justify">
+<A name="install"></A>
+////////////////////////////////////////////// <br />
+<span class="rubrique">Installation / Mise à jour</span> <br />
+// <A href="#top" class="retour">Retour au sommaire</A><br /> 
+
+<br />
+// <span class="surligne">ATTENTION : ce script nécessite PHP 4.3.3 ou supérieur</span>. 
+Si vous n'êtes pas sûr de la version de PHP installée sur votre serveur, 
+uploadez le fichier phpinfo.php contenu dans cette archive et rendez vous à son adresse.
+Vous verrez alors la version de PHP installée et les différentes options de configuration de PHP sur votre serveur.
+<br /><br />
+
+// <span class="rubrique">Installation</span>
+
+<dl>
+<dt> 1- Décompressez le contenu de l'archive que vous avez téléchargé (si vous lisez ceci, c'est probablement déjà fait). 
+<dd>&nbsp;
+<dt> 2- <span class="surligne">Remplissez le fichier de configuration du script (blork_engine_config_03.php) 
+<dd>&nbsp;
+<dt> 3- <span class="surligne">Mettez sur votre espace FTP le contenu du dossier "script"</span>. Vous pouvez le placer à l'endroit que vous souhaitez
+tant que le fichier est accessible par vos visiteurs. 
+<dd>&nbsp;
+<dt> 4- <span class="surligne">Si votre site est hébergé chez free.fr</span>, créez un dossier <b>sessions</b> (attention au pluriel !) à la racine du ftp. 
+<dd>&nbsp;
+<dt> 5- Testez le script, si tout est bien configuré ça marche !
+<dd>&nbsp;
+<dt> 6- Remplissez les fichiers blork_engine_haut.html et blork_engine_bas.html 
+avec le code html ou php que vous souhaitez voir apparaître en haut et en bas du moteur de recherche.
+</dl>
+
+<br />
+
+// <span class="rubrique">Mise à jour</span> <br /><br />
+
+// <span class="surligne">Depuis n'importe quelle version précédente</span> (même la dernière en date, version 0.23b) :
+
+<dl>
+<dt> 1- <span class="surligne">Faites une copie de sauvegarde des fichiers actuels du script</span>, 
+<dd>&nbsp;
+<dt> 2- <span class="surligne">Remplacez le fichier de configuration (blork_engine_config_03.php)</span>, 
+<span class="surligne">après l'avoir configuré</span> (de nouvelles options sont apparues, le fichier contient également
+de nouvelles valeurs sans lesquelles le script ne pourra pas fonctionner correctement).
+<dd>&nbsp;
+<dt> 3- <span class="surligne">Ajoutez le fichier blork_engine_errors_03.php</span> avec le reste des fichiers du script.
+<dd>&nbsp;
+<dt> 4- <span class="surligne">Si votre site est hébergé chez free.fr</span>, créez un dossier <b>sessions</b> 
+(attention au pluriel !) à la racine du ftp. 
+<dd>&nbsp;
+<dt> 5- Remplacez l'ancien fichier engine.php par le nouveau.
+<dd>&nbsp;
+<dt> 6- Les fichiers blork_engine_haut.html et blork_engine_bas.html peuvent être conservés.
+<dd>&nbsp;
+<dt> 7- Testez le script, si tout est bien configuré ça marche ! 
+</dl>
+
+// <A href="#top" class="retour">Retour au sommaire</A><br />
+////////////////////////////////////////////// <br />
+</p>
+
+
+<br />
+
+
+<!-- PROBLEME / BUG -->
+
+<p align="justify">
+<A name="problemo"></A>
+////////////////////////////////////////////// <br />
+<span class="rubrique">Que faire en cas de problème / bug ?</span> <br />
+// <A href="#top" class="retour">Retour au sommaire</A><br /> 
+
+<br />
+
+<span class="surligne">Si vous êtes hébergé chez free.fr</span> et que vous obtenez les messages d'erreurs suivants :<br /><br />
+<b>Warning: session_start(): open(</b>...<b>, O_RDWR) failed: No such file or directory (2) in </b>...<b> on line </b>... <br />
+<b>Warning: session_start(): Cannot send session cookie - headers already sent by (output started at </b>...<b>) in </b>...<b> on line </b>... <br />
+<b>Warning: session_start(): Cannot send session cache limiter - headers already sent (output started at </b>...<b>) in </b>...<b> on line </b>... <br />
+etc...
+
+<br /><br />
+Retournez au paragraphe sur l'installation, il y est expliqué comment installer le script chez free.fr, merci.
+<br /><br />
+
+<b>Pour d'autres problèmes, commencez par vérifier les points suivants :</b> <br />
+
+<dl>
+<dt> <b>Relisez bien les messages d'erreur qui apparaissent</b> 
+<dd> La plupart du temps, les messages d'erreur donnent de bonnes indications sur la source du problème; assurez vous que 
+le problème ne soit pas dû au fichier de configuration qui serait mal rempli.
+<dd>&nbsp; 
+<dt> <b>Avez vous rempli les fichiers blork_engine_haut.html et blork_engine_bas.html ?</b> 
+<dd> Si oui, activez le debug mode tout en bas du fichier de config, sous la ligne "activation du debug mode", mettez oui au lieu de non. 
+Ces deux fichiers ne seront pas inclus; vérifiez que le problème existe toujours.
+<dd>&nbsp; 
+<dt> <b>Avez vous tenté de modifier le script ?</b> 
+<dd> Si oui, vérifiez que le script original comporte bien le même problème.
+</dl>
+
+// <A href="#top" class="retour">Retour au sommaire</A><br />
+////////////////////////////////////////////// <br />
+</p>
+
+</font>
+
+</TD></TR>
+</TABLE>
+
+
+</BODY>
+</HTML>

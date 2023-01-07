@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="iso-8859-15" ?><!DOCTYPE plantes PUBLIC "calendrier_semis.dtd" "calendrier_semis.dtd">
+<plantes>
+    <legumes>
+        <plante nom="Carotte">
+            <semis m01="s" m02="s" m03="s" m04="s" m05="s" m06="s" m07="s"
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="" m06="" m07="r"
+                                 m08="r" m09="r" m10="r" m11="" m12="">
+            </recolte>
+        </plante>
+        <plante nom="Concombre">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="s" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="" m06="" m07="r"
+                                 m08="r" m09="r" m10="r" m11="" m12="">
+            </recolte>
+        </plante>
+        <plante nom="Courgette">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="" m06="" m07="r"
+                                 m08="r" m09="r" m10="" m11="" m12="">
+            </recolte>
+        </plante>
+        <plante nom="Cresson">
+            <semis m01="" m02="s" m03="s" m04="s" m05="s" m06="s" m07="s"
+                               m08="s" m09="s" m10="s" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="r" m05="r" m06="r" m07="r"
+                                 m08="r" m09="r" m10="r" m11="r" m12="">
+            </recolte>
+        </plante>
+        <plante nom="Epinard">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="s" m07="s"
+                               m08="s" m09="s" m10="s" m11="" m12="">
+            </semis>
+            <recolte m01="rs" m02="rs" m03="rs" m04="rs" m05="r" m06="r"
+                                 m07="r" m08="r" m09="r" m10="r" m11="r" m12="r">
+            </recolte>
+        </plante>
+        <plante nom="Fenouil">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="s" m07="s"
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="rs" m02="rs" m03="rs" m04="" m05="" m06="" m07=""
+                                 m08="r" m09="r" m10="r" m11="r" m12="r">
+            </recolte>
+        </plante>
+        <plante nom="Fève">
+            <semis m01="" m02="s" m03="s" m04="" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="r" m05="r" m06="r" m07="r"
+                                 m08="r" m09="r" m10="" m11="" m12="">
+            </recolte>
+        </plante>
+        <plante nom="Laitue">
+            <semis m01="" m02="s" m03="s" m04="s" m05="s" m06="s" m07="s"
+                               m08="s" m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="" m06="r" m07="r"
+                                 m08="r" m09="r" m10="r" m11="r" m12="">
+            </recolte>
+        </plante>
+        <plante nom="Melon">
+            <semis m01="" m02="s" m03="s" m04="s" m05="s" m06="s" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="" m06="" m07="r"
+                                 m08="r" m09="r" m10="" m11="" m12="">
+            </recolte>
+        </plante>
+        <plante nom="Navet">
+            <semis m01="" m02="s" m03="s" m04="s" m05="s" m06="s" m07="s"
+                               m08="s" m09="s" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="r" m06="r" m07="r"
+                                 m08="r" m09="r" m10="r" m11="r" m12="r">
+            </recolte>
+        </plante>
+        <plante nom="Oignon blanc">
+            <semis m01="" m02="s" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="" m06="" m07="r"
+                                 m08="r" m09="r" m10="" m11="" m12="">
+            </recolte>
+        </plante>
+        <plante nom="Oseille">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="s" m07="s"
+                               m08="s" m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="r" m06="r" m07="r"
+                                 m08="r" m09="r" m10="r" m11="r" m12="r">
+            </recolte>
+        </plante>
+        <plante nom="Piment">
+            <semis m01="" m02="s" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="" m06="" m07="r"
+                                 m08="r" m09="r" m10="r" m11="" m12="">
+            </recolte>
+        </plante>
+        <plante nom="Poireau">
+            <semis m01="s" m02="s" m03="s" m04="s" m05="s" m06="" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="rs" m02="rs" m03="rs" m04="rs" m05="" m06="r"
+                                 m07="r" m08="r" m09="r" m10="r" m11="r" m12="r">
+            </recolte>
+        </plante>
+        <plante nom="Pois à grains ronds">
+            <semis m01="" m02="s" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="r" m06="r" m07="r"
+                                 m08="" m09="" m10="" m11="" m12="">
+            </recolte>
+        </plante>
+        <plante nom="Poivron">
+            <semis m01="" m02="s" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="" m06="" m07="r"
+                                 m08="r" m09="r" m10="r" m11="" m12="">
+            </recolte>
+        </plante>
+        <plante nom="Potiron">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="" m06="" m07=""
+                                 m08="" m09="r" m10="r" m11="r" m12="r">
+            </recolte>
+        </plante>
+        <plante nom="Radis">
+            <semis m01="s" m02="s" m03="s" m04="s" m05="s" m06="s" m07="s"
+                               m08="s" m09="s" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="r" m04="r" m05="r" m06="r" m07="r"
+                                 m08="r" m09="r" m10="r" m11="r" m12="">
+            </recolte>
+        </plante>
+        <plante nom="Salsifis">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="rs" m02="rs" m03="rs" m04="rs" m05="" m06=""
+                                 m07="" m08="" m09="" m10="r" m11="r" m12="r">
+            </recolte>
+        </plante>
+        <plante nom="Tomate">
+            <semis m01="" m02="s" m03="s" m04="s" m05="s" m06="" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <recolte m01="" m02="" m03="" m04="" m05="" m06="" m07="r"
+                                 m08="r" m09="r" m10="r" m11="" m12="">
+            </recolte>
+        </plante>
+    </legumes>
+    <fleurs>
+        <plante nom="Ageratum" type="vivace">
+            <semis m01="s" m02="s" m03="s" m04="s" m05="s" m06="" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Alysse" type="annuelle">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="s" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Amarante" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Ancolie" type="vivace">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="fs" m05="fs" m06="fs"
+                                   m07="fs" m08="" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Aubretia" type="annuelle">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="s" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Balsamine" type="vivace">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="s" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="f" m05="f" m06="f"
+                                   m07="f" m08="" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Bégonia" type="annuelle">
+            <semis m01="s" m02="s" m03="s" m04="" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="f" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Campanule" type="biannuelle">
+            <semis m01="" m02="" m03="" m04="" m05="s" m06="s" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="fs" m06="fs"
+                                   m07="fs" m08="" m09="" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Capucine" type="annuelle">
+            <semis m01="" m02="s" m03="s" m04="s" m05="s" m06="" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Célosie" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Centaurée" type="annuelle">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Chrysanthème" type="vivace">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="s" m07="s"
+                               m08="s" m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="fs" m02="fs" m03="fs" m04="" m05="" m06=""
+                                   m07="" m08="" m09="" m10="f" m11="f" m12="f">
+            </floraison>
+        </plante>
+        <plante nom="Clarkia" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="s" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Cléome" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Cobée" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Coléus" type="annuelle">
+            <semis m01="s" m02="s" m03="s" m04="" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Coloquinte" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07=""
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Coquelicot" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Coreopsis" type="vivace">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Cosmos" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Cyclamen" type="vivace">
+            <semis m01="s" m02="s" m03="s" m04="" m05="" m06="" m07="" m08=""
+                               m09="" m10="s" m11="s" m12="s">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07=""
+                                   m08="" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Dalhia" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Delphineum" type="vivace">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Digitale" type="biannuelle">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="s" m07="s"
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="fs" m06="fs"
+                                   m07="fs" m08="" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Dimorphoteca" type="annuelle">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="s" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Eschscholtzia" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="f" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Gaillarde" type="vivace">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="s" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="fs" m07="fs"
+                                   m08="fs" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Gazania" type="vivace">
+            <semis m01="s" m02="s" m03="s" m04="" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Géranium" type="annuelle">
+            <semis m01="s" m02="s" m03="s" m04="" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Giroflée d'été" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Giroflée d'hiver" type="biannuelle">
+            <semis m01="" m02="s" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Godetia" type="annuelle">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Gypsophile Elégant" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Gypsophile Panicule" type="vivace">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Immortelle" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Impatiens" type="annuelle">
+            <semis m01="" m02="s" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Ipomée" type="annuelle">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="s" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Julienne" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Lavatère" type="annuelle">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="s" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Lin" type="vivace">
+            <semis m01="" m02="" m03="" m04="" m05="s" m06="s" m07="s" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="f" m05="f" m06="f"
+                                   m07="f" m08="" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Lobélia" type="annuelle">
+            <semis m01="" m02="s" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="f" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Lupin" type="vivace">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="s" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="f" m06="f" m07="f"
+                                   m08="f" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Marguerite" type="vivace">
+            <semis m01="" m02="" m03="" m04="" m05="s" m06="s" m07="s" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="f" m06="f" m07="f"
+                                   m08="" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Muflier" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07=""
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Myosotis" type="bisannuelle">
+            <semis m01="" m02="" m03="" m04="" m05="s" m06="s" m07="s" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="f" m05="f" m06="f"
+                                   m07="" m08="" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Nigelle" type="annuelle">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Oeillet" type="annuelle">
+            <semis m01="" m02="s" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Oeillet de Chine" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Oeillet d'Inde" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Pâquerette" type="bisannuelle">
+            <semis m01="" m02="" m03="" m04="" m05="" m06="s" m07="s" m08="s"
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="fs" m04="fs" m05="fs" m06="fs"
+                                   m07="" m08="" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Pavot d'Orient" type="vivace">
+            <semis m01="" m02="" m03="" m04="" m05="s" m06="s" m07="s" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="fs" m06="fs"
+                                   m07="" m08="" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Pelargonium" type="vivace">
+            <semis m01="s" m02="s" m03="s" m04="s" m05="s" m06="" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Pensée" type="bisannuelle">
+            <semis m01="" m02="" m03="" m04="" m05="" m06="s" m07="s" m08="s"
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="fs" m04="fs" m05="fs" m06="fs"
+                                   m07="" m08="" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Pétunia" type="annuelle">
+            <semis m01="" m02="s" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Phlox de Drummond" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Pied d'alouette" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Pois de senteur" type="annuelle">
+            <semis m01="" m02="s" m03="s" m04="s" m05="s" m06="" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Pourpier" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Primevère" type="vivace">
+            <semis m01="s" m02="" m03="s" m04="s" m05="s" m06="s" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="fs" m03="fs" m04="fs" m05="fs" m06=""
+                                   m07="" m08="" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Reine Marguerite" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Rose trémière" type="vivace">
+            <semis m01="s" m02="" m03="" m04="s" m05="s" m06="s" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Rudbeckia" type="annuelle">
+            <semis m01="" m02="s" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Sauge" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Souci" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="s" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Soleil" type="annuelle">
+            <semis m01="" m02="" m03="" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Tabac" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Verveine" type="annuelle">
+            <semis m01="" m02="s" m03="s" m04="s" m05="" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="f" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Violette" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="s" m07=""
+                               m08="" m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="fs" m04="fs" m05="" m06=""
+                                   m07="" m08="" m09="" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+        <plante nom="Zinnia" type="annuelle">
+            <semis m01="" m02="" m03="s" m04="s" m05="s" m06="" m07="" m08=""
+                               m09="" m10="" m11="" m12="">
+            </semis>
+            <floraison m01="" m02="" m03="" m04="" m05="" m06="f" m07="f"
+                                   m08="f" m09="f" m10="" m11="" m12="">
+            </floraison>
+        </plante>
+    </fleurs>
+</plantes>

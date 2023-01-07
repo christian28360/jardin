@@ -1,0 +1,1 @@
+document.write('<scr'+'ipt type="text/javascript">\nvar uri = \'http://impfr.tradedoubler.com/imp?type(js)pool(398677)a(1829633)\' + new String (Math.random()).substring (2, 11);\ndocument.write(\'<sc\'+\'ript type="text/javascript" src="\'+uri+\'" charset="ISO-8859-1"></sc\'+\'ript>\');\n</scr'+'ipt>');

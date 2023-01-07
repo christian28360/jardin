@@ -1,0 +1,139 @@
+/* Default CSS Document for Ad-space N.100 */
+
+/* Please copy-paste this content in an external file, modify it, upload it on your server and insert the file URL in the "CSS file URL" field */
+
+/* Please note, this CSS is specific for Ad Space N.100. It wont be directly applicable to another Ad Space. */
+
+/*main table*/
+.adpurl_style_table_101 {
+	background-repeat: no-repeat;
+	text-align: left;
+	border: none;
+	border-collapse: collapse;
+	padding: 0px;
+	margin: 0px;
+	border-spacing: 0px;
+	background-color: #ffffff;
+	border: 1px solid #e8e8e8;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+.adpurl_style_cell_101 {
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+}
+
+.adpurl_style_row_101 {
+	padding: 0px;
+	margin: 0px;
+}
+
+.adpurl_style_your_ad_cell_101 {
+	
+}
+
+/*individual ad*/
+.adpurl_style_ad_table_101 {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	border-spacing: 0px;
+	border: none;
+	border-collapse: collapse;
+	height: 30px;
+}
+
+.adpurl_style_ad_title_cell_101 {
+	padding: 0px;
+	margin: 0px;
+	height: 1px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.adpurl_style_title_101 {
+	color: #222222;
+	margin: 0px;
+	padding: 0px;
+	margin-right: 2px;
+	font: 11px arial;
+	text-align: left;
+	font-weight: bold;
+}
+
+.adpurl_style_title_101:hover {
+	text-decoration: none;
+}
+
+.adpurl_style_title_101:link {
+	text-decoration: none;
+}
+
+.adpurl_style_ad_text_cell_101 {
+	padding: 0px;
+	margin: 0px;
+	height: 1px;
+	vertical-align: top;
+	text-align: left;
+}
+
+.adpurl_style_text_101 {
+	color: #696969;
+	margin: 0px;
+	padding: 0px;
+	padding-right: 2px;
+	font: 11px arial;
+	text-align: left;
+}
+
+.adpurl_style_text_101:hover {
+	text-decoration: none;
+	color: #696969;
+}
+
+.adpurl_style_text_101:link {
+	text-decoration: none;
+	color: #696969;
+}
+
+.adpurl_style_ad_link_cell_101 {
+	padding: 0px;
+	margin: 0px;
+	vertical-align: top;
+}
+
+.adpurl_style_link_101 {
+	color: #ce41a5;
+	margin-left: 0px;
+	padding-right: 2px;
+	font: 10px arial;
+}
+
+.adpurl_style_link_101:hover {
+	text-decoration: none;
+	color: #ce41a5;
+}
+
+.adpurl_style_link_101:link {
+	text-decoration: none;
+	color: #ce41a5;
+}
+
+.adpurl_style_ad_image_cell_101 {
+	vertical-align: middle;
+	height: 47px;
+	width: 62px;
+	text-align: left;
+	padding-right: 4px;
+}
+
+.adpurl_style_image_101 {
+	text-align: left;
+	width: 62px;
+}
+
+.adpurl_style_img_101 {
+	
+}

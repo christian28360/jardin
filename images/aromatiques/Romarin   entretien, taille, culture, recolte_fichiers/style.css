@@ -1,0 +1,36 @@
+#home_ad{
+	position:absolute;
+	width:100%;
+	height:100%;
+	text-align:center;
+	margin-top:-20px; 
+	z-index:999;
+	vertical-align: middle;
+	display:none;
+}
+#home_ad .overlay{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:#333333;
+	opacity:0.8;
+	filter:alpha(opacity=80);  
+    -moz-opacity:0.8;
+    z-index: -1;
+}
+#home_ad_skip{
+ 	color: #FFFFFF;
+    display: block;
+    font-family: Myriard Pro;
+    font-size: 18px;
+    padding-top: 10px;
+    position: relative;
+    text-align: right;
+    width: 100%;
+    cursor:pointer;
+}
+
+#home_ad img{
+	z-index:1;
+
+}

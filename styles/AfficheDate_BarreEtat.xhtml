@@ -1,0 +1,30 @@
+<html>
+<head>
+<script language="javascript"> <!--
+/*  E-mail =  hichame@lycos.com
+     un e-mail fait toujours plaisir :o)
+*/
+/*********** Debut du script qui affiche la date en temp reel dans le status de la fenetre  *****************/
+function Affiche_Heure_Dans_Status() {
+ var JourSem = new Array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'vendredi', 'Samedi' );
+ var MoisAn = new Array('janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre');
+ var MaDate = new Date(); 
+ var NoJourSem = MaDate.getDay() ;
+ var Jour = MaDate.getDate();
+ var NoMois = MaDate.getMonth();
+ var An = MaDate.getYear();
+ timer = 900000; //le timer c'est a dire le chrono est regle pour 1000 milisecondes c-a-d 1 seconde * 15 mn
+ window.status = "Nous sommes le " + JourSem[NoJourSem] + " " + Jour + " " + MoisAn[NoMois] + " " + An ;
+ setTimeout("Affiche_Heure_Dans_Status();",timer); // on regarde tous les 1/4 d'heure si on change de jour
+}
+/*********** Fin du script du traitement ******************/
+//-->
+</script>
+</head>
+
+<body onload="Affiche_Heure_Dans_Status();")>
+	<h3>AFFICHAGE LE LA DATE EN TEMPS REEL DANS LE BAS DE LA FENETRE
+		DU BROWSER</h3>
+
+</body>
+</html>

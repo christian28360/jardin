@@ -1,0 +1,12 @@
+bitt.setCookie
+('bitt-1832',
+ '1292712519718PQ4TQf!7CRt0oTm3KWi-LGzISiXqwEAAAEOeAFlzkEKhTAMBNCrBFftrpmmSXscP1_cC97fKiqkbpPHzISQiEFM07psv2Xe_xOBchE0SwZECqzoJyfUC-1f9zfzgAXUPCmP0NrOEpGxJA-i1FHwI0q1a-gn4x2aIV3YmGD3DK0JHOMB-gI-Nw**');
+bitt.bitts[0].content =
+'<script type=\'text/javascript\'>document.write(\'<iframe frameborder="0" allowtransparency="true" scrolling="no" style="margin:0px; padding:0px; border:0px; width:728px; height:90px;" src="http://server.bittads.com/ad-creative.ucw?instance=1832&amp;ad=6&amp;creative=4&amp;zone=gerbeaud&amp;loc=default location&amp;client=1292712519718PQ4TQf"></iframe>\');</script>\n';
+bitt.bitts[0].viewUrl =
+'http://server.bittads.com/view/KCgiMTgzMiIgImdlcmJlYXVkIiAiMTI5MjcxMjUxOTcxOFBRNFRRZiIgNiAxIDQgImRlZmF1bHQgbG9jYXRpb24iKQogKCIxODMyIiAiZ2VyYmVhdWQiICIxMjkyNzEyNTE5NzE4UFE0VFFmIiAxNjQgMiAxNzcgImRlZmF1bHQgbG9jYXRpb24iKQogKCIxODMyIiAiZ2VyYmVhdWQiICIxMjkyNzEyNTE5NzE4UFE0VFFmIiAxNDIgOSAxNTMgImRlZmF1bHQgbG9jYXRpb24iKSk*';
+bitt.bitts[1].content =
+'<script type=\'text/javascript\'>\n bitt.writeAd({\n   flashversion: 6,\n   clickURL: "http://server.bittads.com/click/KCIxODMyIiAiZ2VyYmVhdWQiIDE2NCAxNzcgImRlZmF1bHQgbG9jYXRpb24iICIxMjkyNzEyNTE5NzE4UFE0VFFmIiAiLyIgTklMKQ**",\n   swf: "http://admin.bittads.com/uploads/1832/164/shubertxsw_ifrnxncqnq.swf",\n   link: "http://server.bittads.com/click/KCIxODMyIiAiZ2VyYmVhdWQiIDE2NCAxNzcgImRlZmF1bHQgbG9jYXRpb24iICIxMjkyNzEyNTE5NzE4UFE0VFFmIgogImh0dHA6Ly93d3cuYXVkaXRpb25zYW50ZS5mci9pbmRleDIucGhwIiBOSUwp",\n   width: 300,\n   height: 250\n });\n</script>';
+bitt.bitts[2].content =
+'<script type=\'text/javascript\'>document.write(\'<iframe frameborder="0" allowtransparency="true" scrolling="no" style="margin:0px; padding:0px; border:0px; width:300px; height:250px;" src="http://server.bittads.com/ad-creative.ucw?instance=1832&amp;ad=142&amp;creative=153&amp;zone=gerbeaud&amp;loc=default location&amp;client=1292712519718PQ4TQf"></iframe>\');</script>\n';
+bitt.fillBitts();

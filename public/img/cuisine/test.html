@@ -1,0 +1,413 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Propri�t� CSS "content"</title>
+
+<style type="text/css">
+/*
+	content:attr(x);
+	content:close-quote;
+	content:inherit;
+	content:no-close-quote;
+	content:no-open-quote;
+	content:open-quote;
+*/
+body {
+	font: 10pt/1.2 Trebuchet Ms, Arial, Helvetica, sans-serif;
+}
+
+pre { /*display:inline;*/
+	background: #EEE;
+	border: 1px solid #DDD;
+}
+
+h2 {
+	margin: 50px 0 0 50px;
+}
+
+div {
+	margin: 0 0 0 100px;
+}
+
+hr {
+	margin: 30px 0 30px 100px;
+}
+
+p.explication {
+	margin: 10px 0 0 100px;
+	padding-left: 10px;
+	font-size: 9pt;
+	font-style: oblique;
+	border-left: 2px solid #000;
+}
+
+p.explication:before {
+	content: "Note : ";
+	font-style: normal;
+}
+
+#test01 a:after {
+	content: " [" attr(hreflang) "] ";
+}
+
+#test02 label:after {
+	content: " : ";
+}
+
+#test03 p.p01:before {
+	content: open-quote;
+}
+
+#test03 p.p03:after {
+	content: close-quote;
+}
+
+#test04 label:after {
+	content: " => ";
+}
+
+#test04 label:before {
+	content: "* ";
+	color: #F00;
+}
+
+#test05 input:after {
+	content: " " attr(maxlength) " caract�res maximum";
+}
+
+#test06 a {
+	text-decoration: none;
+}
+
+#test06 a[hreflang]:before {
+	content: url(terre.gif) " ";
+	vertical-align: middle;
+}
+
+#test07 a {
+	display: block;
+	float: left;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	background: url(bouton_fond.gif) 0 0 repeat-x;
+}
+
+#test07 a:before {
+	vertical-align: middle;
+	content: url(bouton_gch.gif);
+}
+
+#test07 a:after {
+	vertical-align: middle;
+	content: url(bouton_dte.gif);
+}
+
+#test08 img:before {
+	content: attr(title);
+	display: block;
+}
+
+#test09 li:before {
+	content: "Section : ";
+	letter-spacing: .2em;
+	font-size: 8pt;
+	font-variant: small-caps;
+}
+
+#test09 li li:before {
+	content: "Chapitre : ";
+}
+
+#test09 li li li:before {
+	content: "Paragraphe : ";
+}
+
+#test10 kbd:before {
+	vertical-align: middle;
+	content: url(Keyboard.gif);
+}
+
+#test10 code:before {
+	vertical-align: middle;
+	content: url(MsDos.gif);
+}
+
+#test10 dfn:before {
+	vertical-align: middle;
+	content: url(NotePad.gif) " ";
+}
+
+#test10 cite:before {
+	vertical-align: middle;
+	content: url(say.gif) " ";
+}
+</style>
+
+</head>
+<body>
+
+
+	<h1>Propri�t� CSS "content"</h1>
+
+
+
+
+	<h2>Dans les liens</h2>
+
+	<div id="test01">
+		<pre>&lt;a href="#" hreflang="fr"&gt;Ceci est un lien hypertexte&lt;/a&gt;</pre>
+		<pre>a:after {content:" ["attr(hreflang)"] ";}</pre>
+		<p>
+			<a href="#" hreflang="fr">Ceci est un lien hypertexte</a>
+		</p>
+	</div>
+	<p class="explication">
+		On peut indiquer qu'elle est la langue de la page li�e en utilisant
+		l'attribut <em>hreflang</em>. Aussi, j'ajoute des espaces et des
+		crochets pour mettre en forme le lien.
+	</p>
+
+	<hr>
+
+	<div id="test06">
+		<pre>&lt;a href="http://www.mezzoblue.com/" hreflang="en"&gt;Ceci est un lien hypertexte externe&lt;/a&gt;.</pre>
+		<pre>a {text-decoration:none;}
+a[hreflang]:before {
+	content:url(terre.gif)" ";
+	vertical-align:middle;
+}</pre>
+		<p>
+			<a href="http://www.mezzoblue.com/" hreflang="en">Ceci est un
+				lien hypertexte externe</a>
+		</p>
+	</div>
+	<p class="explication">
+		En partant du principe qu'un lien externe contient un attribut <em>hreflang</em>.
+	</p>
+
+	<hr>
+
+	<div id="test07">
+		<pre>&lt;a href="#"&gt;Un joli bouton&lt;/a&gt;</pre>
+		<pre>a {
+	display:block;
+	float:left;
+	text-align:center;
+	text-decoration:none;
+	background:url(bouton_fond.gif) 0 0 repeat-x;
+}
+a:before {
+	vertical-align:middle;
+	content:url(bouton_gch.gif);
+}
+a:after  {
+	vertical-align:middle;
+	content:url(bouton_dte.gif);
+}</pre>
+		<p>
+			<a href="#">Un joli bouton</a>
+		</p>
+	</div>
+	<p class="explication" style="clear: both;">
+		Plus besoin de code XHTML � rallonge pour cr�er des boutons ou des
+		cadres arrondis. Plus d''infos sur <a
+			href="http://www.nanoum.net/blog/5_before_et_after.html">le blog
+			de Nanoum</a>.
+	</p>
+
+	<hr>
+
+	<!-- 
+
+	<h2>Dans les images</h2>
+
+	<div id="test08">
+		<pre>&lt; /&gt;</pre>
+		<pre></pre>
+		<p><img src="tournesol.jpg" alt="Photo de fleur" title="Le Tournesol sur fond violet" /><p>
+	</div>
+	<p class="explication"></p>
+
+	</div>
+
+ -->
+	<h2>Dans les formulaires</h2>
+
+	<div id="test02">
+		<pre>&lt;label for="adresse"&gt;Entrez votre adresse&lt;/label&gt;&lt;input type="text" name="adresse" id="adresse" value="" /&gt;</pre>
+		<pre>label:after {content:" : ";}</pre>
+		<p>
+			<label for="adresse">Entrez votre adresse</label><input
+				name="adresse" id="adresse" value="fsdfsd" type="text">
+		</p>
+		<p></p>
+	</div>
+	<p class="explication">Ici, on affecte un contenu textuel
+		signifiant le lien entre l'�tiquette (label) et le champs de
+		formulaire (input).</p>
+
+	<hr>
+
+	<div id="test04">
+		<pre>&lt;label for="adresse"&gt;Entrez votre adresse&lt;/label&gt;&lt;input type="text" name="adresse" id="adresse" value="" /&gt;</pre>
+		<pre>label:after {content:" =&gt; ";}
+label:before {
+	content:"* ";
+	color:#F00;
+}</pre>
+		<p>
+			<label for="adresse">Entrez votre adresse</label><input
+				name="adresse" id="adresse" type="text">
+		</p>
+	</div>
+	<p class="explication">Dans le cas d'un champs � remplir
+		obligatoirement, on peut imaginer mettre une sorte de drapeau. Ici,
+		une �toile rouge.</p>
+
+	<hr>
+
+
+	<!-- 
+	<div id="test05">
+		<pre>XXX</pre>
+		<pre>&lt;label for="adresse"&gt;Entrez votre adresse&lt;/label&gt;&lt;input type="text" name="adresse" id="adresse" value="" /&gt;</pre>
+		<label for="adresse">Entrez votre adresse</label><input type="text" name="adresse" id="adresse" value="" maxlength="60" />
+	</div>
+	 -->
+
+
+
+
+	<h2>Dans les textes</h2>
+
+	<div id="test03">
+		<pre>&lt;p class="p01"&gt;Nunc tempus feugiat justo. Phasellus ut magna. Quisque tortor leo, auctor vel.&lt;/p&gt;
+&lt;p class="p02"&gt;Lobortis at, sodales vel, nunc. Etiam vel leo.&lt;/p&gt;
+&lt;p class="p03"&gt;Aenean semper. Integer porttitor.&lt;/p&gt;</pre>
+		<pre>p.p01:before {content:open-quote;}
+p.p03:after {content:close-quote;}</pre>
+		<p class="p01">Nunc tempus feugiat justo. Phasellus ut magna.
+			Quisque tortor leo, auctor vel.</p>
+		<p class="p02">Lobortis at, sodales vel, nunc. Etiam vel leo.</p>
+		<p class="p03">Aenean semper. Integer porttitor.</p>
+	</div>
+	<p class="explication">Pour ajouter des guillemets � un texte sur
+		plusieurs paragraphes, cette m�thode est interessante par le fait
+		qu'elle evite des paragraphes avec des guillemets non-ferm�s.</p>
+
+
+	<hr>
+
+
+	<h2>Dans les listes</h2>
+
+
+
+	<div id="test09">
+		<pre>&lt;ul&gt;
+	&lt;li&gt;Titre 1
+		&lt;ul&gt;
+			&lt;li&gt;Titre 1.1&lt;/li&gt;
+			&lt;li&gt;Titre 1.2
+				&lt;ul&gt;
+					&lt;li&gt;Titre 1.2.1&lt;/li&gt;
+					&lt;li&gt;Titre 1.2.2&lt;/li&gt;
+					&lt;li&gt;Titre 1.2.3&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+			&lt;li&gt;Titre 1.3&lt;/li&gt;
+			&lt;li&gt;Titre 1.4&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;Titre 2&lt;/li&gt;
+	&lt;li&gt;Titre 3&lt;/li&gt;
+	&lt;li&gt;Titre 4&lt;/li&gt;
+&lt;/ul&gt;</pre>
+		<pre>li:before {
+	content:"Section : ";
+	letter-spacing:.2em;
+	font-size:8pt;
+	font-variant:small-caps;
+}
+li li:before {content:"Chapitre : ";}
+li li li:before {content:"Paragraphe : ";}</pre>
+		<ul>
+			<li>Titre 1
+				<ul>
+					<li>Titre 1.1</li>
+					<li>Titre 1.2
+						<ul>
+							<li>Titre 1.2.1</li>
+							<li>Titre 1.2.2</li>
+							<li>Titre 1.2.3</li>
+						</ul>
+					</li>
+					<li>Titre 1.3</li>
+					<li>Titre 1.4</li>
+				</ul>
+			</li>
+			<li>Titre 2</li>
+			<li>Titre 3</li>
+			<li>Titre 4</li>
+		</ul>
+	</div>
+	<p class="explication">Avec une hi�rarchie list�e, on peut �tablir
+		une �tiquette pour chaque niveaux d'arborescence.</p>
+
+
+	<hr>
+
+
+
+	<h2>Dans toutes les autres balises</h2>
+
+	<p class="explication">
+		On peut, par exemple, imaginer de baliser par une image toutes <a
+			href="http://www.babylon-design.com/site/index.php/2005/02/17/53-les-balises-meconnues-du-xhtml-1-strict">les
+			balises XHTML peu courantes</a>...
+	</p>
+
+	<div id="test10">
+
+		<h3>&lt;code&gt;</h3>
+		<p>
+			Ceci est un code :
+			<code>15sd5cjYI6</code>
+			.
+		</p>
+
+		<h3>&lt;kbd&gt;</h3>
+		<p>
+			Tapez
+			<kbd>conf.exe</kbd>
+			dans la fen�tre d'execution.
+		</p>
+
+		<h3>&lt;cite&gt;</h3>
+		<p>
+			<cite>Et des go�lands, en veux-tu ? En voil� !</cite> s'exclama
+			Beno�t.
+		</p>
+
+		<h3>&lt;dfn&gt;</h3>
+		<p>
+			Le pommier
+			<dfn>arbre fruitier commun en Normandie</dfn>
+			.
+		</p>
+
+	</div>
+
+	<hr>
+
+
+
+
+
+</body>
+</html>

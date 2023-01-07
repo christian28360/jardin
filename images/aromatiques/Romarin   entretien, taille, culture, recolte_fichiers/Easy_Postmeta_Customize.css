@@ -1,0 +1,70 @@
+/*
+* CSS easy_postmeta_customize
+* @author Valentin PETITPAS
+*
+*/
+
+
+#postcustomstuff table input[type="checkbox"]
+{
+    margin: 8px 0 8px 8px;
+    width: 10%;
+}
+
+#plugin_label
+{
+	display: block;
+	width: 250px;
+	float: left;
+}
+
+.just_updated_customfield
+{
+	background-color: #FFFF70;
+}
+
+td
+{
+	width: 300px;
+}
+
+#vp_success
+{
+	color: green;
+	font-size: 120%;
+}
+
+#vp_error
+{
+	color: red;
+	font-size: 115%;
+}
+
+#vp_advertize
+{
+	color:Darkorange;
+	font-size: 105%;
+}
+
+#get_more_info:hover
+{
+	cursor:pointer;
+	text-decoration:underline;
+	color:red;
+}
+
+#more_info_span
+{
+	display: none;
+	color: black;
+}
+
+.ajax_maj_span:hover
+{
+	cursor:pointer;
+}
+
+.ajax_maj_span
+{
+	font-size:110%;
+}

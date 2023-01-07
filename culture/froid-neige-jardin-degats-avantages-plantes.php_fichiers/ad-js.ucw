@@ -1,0 +1,10 @@
+bitt.setCookie
+('bitt-1832',
+ '1327693413578VECkNk!jWRf_MMtJmY7MwWeqiNLuQEAAACFeAHT0DBXMFIwVFBKTy1KSk0sTVFSMFMwNjU2M7MwN7c01FTQMAPKosibo8obmhgpWKKqMIarsLAAmmBoYoJuhyGyCk0AIiEe6g**');
+bitt.bitts[0].content =
+'<script type=\'text/javascript\'>document.write(\'<iframe frameborder="0" allowtransparency="true" scrolling="no" style="margin:0px; padding:0px; border:0px; width:728px; height:90px;" src="http://server.bittads.com/ad-creative.ucw?instance=1832&amp;ad=6&amp;creative=4&amp;zone=gerbeaud&amp;loc=default location&amp;client=1327693413578VECkNk"></iframe>\');</script>\n';
+bitt.bitts[0].viewUrl =
+'http://server.bittads.com/view/KCgiMTgzMiIgImdlcmJlYXVkIiAiMTMyNzY5MzQxMzU3OFZFQ2tOayIgNiAxIDQgImRlZmF1bHQgbG9jYXRpb24iKQogKCIxODMyIiAiZ2VyYmVhdWQiICIxMzI3NjkzNDEzNTc4VkVDa05rIiAxNDQgMiAxNTUgImRlZmF1bHQgbG9jYXRpb24iKSk*';
+bitt.bitts[1].content =
+'<script type=\'text/javascript\'>\n bitt.writeAd({\n   flashversion: 6,\n   clickURL: "http://server.bittads.com/click/KCIxODMyIiAiZ2VyYmVhdWQiIDE0NCAxNTUgImRlZmF1bHQgbG9jYXRpb24iICIxMzI3NjkzNDEzNTc4VkVDa05rIiAiLyIgTklMKQ**",\n   swf: "http://admin.bittads.com/uploads/1832/144/JDEBannerx_5odqnr1isi.swf",\n   link: "http://server.bittads.com/click/KCIxODMyIiAiZ2VyYmVhdWQiIDE0NCAxNTUgImRlZmF1bHQgbG9jYXRpb24iICIxMzI3NjkzNDEzNTc4VkVDa05rIgogImh0dHA6Ly93d3cuZGVlcmUuZnIvd3BzL2Rjb20vZnJfRlIvcHJvZHVjdHMvZXF1aXBtZW50L2F1dG9ub21vdXNfbW93ZXIvYXV0b25vbW91c19tb3dlci5wYWdlP2NpZD1CQUNfUmVzX2ZyX0ZSX1RhbmdvMjAxMV9HZXJiZWF1ZF8zMDB4NjAwXzMxMTIyMDExIgogTklMKQ**",\n   width: 300,\n   height: 600\n });\n</script>';
+bitt.fillBitts();

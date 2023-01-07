@@ -1,0 +1,44 @@
+<?php 
+$page = "index.php?page=jardin_sauvage";
+
+if ($precName) {
+?>
+<p>
+    <a class = "nav_precedent"
+       href="<?php print($page . $prec) ?>">
+        <img
+            title = "page suivante"
+            src = "//public/img/common/fl-precedente.gif"
+            alt = "page suivante"
+            align = "absmiddle"
+            border = "0"
+            height = "13"
+            width = "13">
+        <?php echo $precName ?>
+    </a>
+</p>
+<?php
+}
+?>
+
+<?php
+if ($suivName) {
+?>
+<p>
+    <a class="nav_suivant"
+       href="<?php print($page . $suiv) ?>">
+        <?php echo $suivName ?>
+        <img
+            title="page suivante"
+            alt="page suivante"
+            src="//public/img/common/fl-suivante.gif"
+            align="absmiddle"
+            border="0"
+            height="13"
+            width="13">
+    </a>
+</p>
+<?php
+}
+?>
+<div class="step"></div>

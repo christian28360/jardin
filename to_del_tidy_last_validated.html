@@ -1,0 +1,1089 @@
+<html>
+<head>
+  <META http-equiv="Content-Language" content="fr">
+  <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <META NAME="Author" CONTENT="L'Equipe PHPDébutant.org (webmaster@phpdebutant.org)">
+  <META name="Description" content="Apprendre le PHP par l'exemple, facilement et simplement. Réservé d'abord aux débutants.">
+  <META name="Keywords" content="php4, php3, php, mysql, débuter, programmes, php2, dynamiques, programmation, webmasters, webmestres, developpeurs, tutoriaux, tutorial, tutoriels, scripts, trucs, astuces, trucs et astuces, downloads, faq, telechargements, phpmyadmin,tutorial">
+  <META NAME="Identifier-URL" CONTENT="http://www.phpdebutant.org">
+  <META NAME="Date-Creation-yyyymmdd" content="20000910">
+  <META NAME="Robots" CONTENT="index,follow,all">
+  <META NAME="revisit-after" CONTENT="3 days">
+  <META NAME="Reply-to" CONTENT="webmaster@phpdebutant.org">
+  <meta name="verify-v1" content="oUNhyTBKkYdvH9/mzDLEKw3pI3WqXNIFY46N3KBRXeg=" />
+  <LINK REL=stylesheet TYPE="text/css" HREF="system/templates/css/css_marron.css">
+  <title>Bienvenue sur PHP Débutant</title>
+
+<SCRIPT LANGUAGE="JavaScript">
+function addSidebar() {
+      if ((typeof window.sidebar == "object") && (typeof window.sidebar.addPanel == "function"))
+      {
+	 window.sidebar.addPanel ("phpDebutant.org","http://www.phpdebutant.org/article83.xml","");
+      }
+      else
+      {
+	 var rv = window.confirm ("Pour utiliser la Sidebar phpdebutant, vous devez possedez un navigateur comme Mozilla ou Netscape 6" + "Voulez-vous téléchargez Mozilla ? :-)");
+	 if (rv)
+	    document.location.href = "http://www.mozilla.org";
+      }
+   }
+ </SCRIPT>
+</head>
+
+
+<BODY TOPMARGIN="0" LEFTMARGIN="0" TEXT="#000000" MARGINHEIGHT="0" MARGINWIDTH="0" MARGINRIGHT="0" class="background">
+<div style="width: 0px; height: 0px; display: none; padding: 0; margin: 0;">
+<a href="http://www.wdmedia-hebergement.net/" target="_blank" title="Hébergement du site en PHP et Mysql par WDMédia-hébergement" class="hebergement">Hébergement du site en PHP et Mysql par WDMédia-hébergement</a>
+</div>
+<div style="padding:1px;">
+	<div style="padding:1px;" class="bordure">
+			<table border="0" cellpadding="1" cellspacing="0" width="100%" class="fond_menu" height="60">
+				<tr>
+					<td width="33%"><a href="http://vpontier.free.fr"><img src="system/images/elephpants/logo_marron.gif" border=0 alt="Vous aussi adpotez les éléPHPants de Vincent Pontier !"></a></td>
+					<td width="33%" valign="middle" align="center">
+						<!--/* OpenX Javascript Tag v2.8.10 */-->
+<script type='text/javascript'><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://bannieres.wdmedia.net/www/sendit/adjisay.php':'http://bannieres.wdmedia.net/www/sendit/adjisay.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?zoneid=11");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><noscript><a href='http://bannieres.wdmedia.net/www/sendit/ck.php?n=a93b2dcd&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://bannieres.wdmedia.net/www/sendit/avw.php?zoneid=11&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a93b2dcd' border='0' alt='' /></a></noscript>
+
+					</td>
+					<td width="33%" valign="top" align="right">
+						&nbsp;
+					</td>
+
+				</tr>
+			</table>
+	</div>
+</div>
+
+
+<!-- MENU HAUT ------------------------------------------------------------------------------>
+<div style="padding:1px;padding-bottom:2px;">
+	<div style="padding-left:1px;" class="bordure">
+		<div style="width:100%;text-align:center;font-size:16px;" class="fond_menu">
+			<a href="index.php" class="menu8">News</a> |
+			<a href="article115.php" class="menu8">Documentations</a> |
+			<a href="theme19.php" class="menu8">Astuces</a> |
+			<a href="annuaire20.php" class="menu8">Téléchargements</a> |
+			<a href="http://forum.phpdebutant.org/" class="menu8">Forum</a> |
+			<a href="article15.php" class="menu8">Chat</a> |
+			<a href="article19.php" class="menu8">Wall</a> |
+			<a href="livredor1.php" class="menu8">Livre d'or</a> |
+			<a href="forum3.php" class="menu8">Suggestions</a> |
+			<a href="annuaire32.php" class="menu8">Liens</a> |
+			<a href="article123.php" class="menu8">Stats</a> |
+			<a href="article12.php" class="menu8">Contact</a> |
+			<a href="article80.php" class="menu8">RSS / Sidebar</a> |
+			<a href="article140.php" class="menu8">Association</a>
+		</div>
+	</div>
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class=m10 width="130" valign="top">
+			<table border="0" cellpadding="1" cellspacing="0" width="130" class="bordure">
+				<tr>
+					<td class=m10 width="130" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" width="130" class="fond_menu">
+							<tr>
+								<td class=m10 width="130" valign="top">
+									<table border="0" cellspacing="0" cellpadding="0" width="100%">
+										<!-- Concours  -->
+										<tr>
+											<td width="100%" class="color_titre_menu" align="center" height="20" valign="middle">
+												<div class="color_titre_menu">CONCOURS</div>
+											</td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td width="100%" class="menu8" height="14">
+												&nbsp;&nbsp;<a href="article125.php" class="menu8">Une bannière pour</a><br />
+												&nbsp;&nbsp;<a href="article125.php" class="menu8">PHPDébutant (fini)</a>
+												&nbsp;&nbsp;[<a href="article126.php" class="menu8">résultats</a>]
+											</td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										<!-- + DE PHP  -->
+										<tr>
+											<td width="100%" class="color_titre_menu" align="center" height="20" valign="middle">
+												<div class="color_titre_menu">PLUS DE PHP</div>
+											</td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+												&nbsp;&nbsp;<a href="article11.php" class="menu8"><nobr>Array</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+												&nbsp;&nbsp;<a href="article109.php" class="menu8"><nobr>Templates</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+												&nbsp;&nbsp;<a href="article40.php" class="menu8"><nobr>Cookies</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+												&nbsp;&nbsp;<a href="article41.php" class="menu8"><nobr>Les fonctions</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+												&nbsp;&nbsp;<a href="article42.php" class="menu8"><nobr>Classes et objets I</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+												&nbsp;&nbsp;<a href="article43.php" class="menu8"><nobr>Classes et objets II</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+												&nbsp;&nbsp;<a href="article44.php" class="menu8"><nobr>Classes et objets III</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+												&nbsp;&nbsp;<a href="article144.php" class="menu8"><nobr>Les mises au point</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										<!--  + DE JS  -->
+										<tr>
+											<td width="100%" align="center" class="color_titre_menu" height="20" valign="middle">
+											<div class="color_titre_menu">PLUS DE JAVASCRIPT</div></td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+											&nbsp;&nbsp;<a href="article45.php" class="menu8"><nobr>Premiers pas</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+											&nbsp;&nbsp;<a href="article46.php" class="menu8"><nobr>Contrôles</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+											<img src="system/images/sep/13px_larg.gif" border="0"></td>
+										</tr>
+
+
+										<!-- COMMENT CA MARCHE -->
+										<tr>
+											<td width="100%" align="center" class="color_titre_menu" height="20" valign="middle">
+											<div class="color_titre_menu">COMMENT CA MARCHE</div></td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+											&nbsp;&nbsp;<a href="article47.php" class="menu8"><nobr>Espace membres</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+											&nbsp;&nbsp;<a href="article48.php" class="menu8"><nobr>Site multi-couleurs</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+											&nbsp;&nbsp;<a href="article49.php" class="menu8"><nobr>Statistique</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+											&nbsp;&nbsp;<a href="article95.php" class="menu8"><nobr>Livre d'or</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+											&nbsp;&nbsp;<a href="article107.php" class="menu8"><nobr>Site multi-langues</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+
+										<!-- EXPLIQUE - MOI -->
+
+										<tr>
+											<td width="100%" align="center" class="color_titre_menu" height="20" valign="middle">
+											<div class="color_titre_menu">EXPLIQUE-MOI</div></td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+											&nbsp;&nbsp;<a href="article50.php" class="menu8"><nobr>Les Chmod</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+											&nbsp;&nbsp;<a href="article51.php" class="menu8"><nobr>Le .htaccess</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" class="menu8" height="14">
+											&nbsp;&nbsp;<a href="article52.php" class="menu8"><nobr>Le debuggage</nobr></a>
+											</td>
+										</tr>
+										
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" align="center" class="color_titre_menu" height="20" valign="middle">
+											<div class="color_titre_menu">NEWS LETTER</font></td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td width="100%" align="center" class="m8">
+												<form method="post" action="system/post/add_email.php" name="mailling">
+														<input type="hidden" name="email_ok" value="article39.php">
+														<div style="text-align:center"><input type="text" onfocus="this.value='';" name="email" size="15" value="votre e-mail ici.." maxlength="250"><br/>
+														<input type="submit" value="Ajouter"></div>
+												</form>
+											</td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										<!--<tr>
+											<td width="100%" align="center" class="color_titre_menu" height="20" valign="middle">
+											<div class="color_titre_menu">PHPWORKGROUP</font></td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td width="100%" align="left" class="m8" style="padding-left: 4px;" class="menu8">
+												<font class="text8">
+												Principe du phpworkgroup :<br />
+												<br />
+												Le but est de regrouper et faire travailler ensemble des personnes de niveaux différents,
+												de débutant à confirmé, autour de projets développés en PHP.
+												La motivation est le seul critère d'adhésion...<br />
+												<br />
+												Plus d'info sur le site du <a href="http://www.phpworkgroup.org" target="_blank" class="menu8"><u>phpworkgroup</u></a>
+												</font>
+											</td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>-->
+									
+										<tr>
+											<td width="100%" align="center" class="color_titre_menu" height="20" valign="middle">
+											<div class="color_titre_menu">PARTENAIRES</font></td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td width="100%" align="center" class="m8">
+												<a href="http://classes.scriptsphp.org/" target="_blank" title="Découvrez scriptsphp.org"><img border="0" src="system/images/partenaires/litbancsp.png" alt="Découvrez scriptsphp.org" vspace="4"></a><br />
+												<a href="http://www.phpteam.net" target="_blank" title="Découvrez phpteam.net"><img border="0" src="system/images/partenaires/phpteam.gif" alt="Découvrez phpteam.net" vspace="4"></a><br />
+												<a href="http://www.expreg.com/" target="_blank" title="Tout sur les expressions régulières"><img border="0" src="system/images/partenaires/expreg3.gif" alt="Tout sur les expressions régulières" vspace="4"></a><br />
+												<a href="http://frenchmozilla.sourceforge.net" target="_blank" title="IE sucks :-)"><img border="0" src="system/images/navigateurs/mozilla.png" alt="IE sucks :-)" vspace="4"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										
+										<tr>
+											<td width="100%" align="center" class="color_titre_menu" height="20" valign="middle">
+											<div class="color_titre_menu">DESIGN DU SITE</font></td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+										</tr>
+										<tr>
+											<td width="100%" class="menu8" height="14" align="center">
+
+												<a href="system/post/send_design.php3?color=marron" class="menu8">
+												<img src="system/images/palettes/marron.gif" border="0"></a>
+												<br>
+
+												<a href="system/post/send_design.php3?color=blue" class="menu8">
+												<img src="system/images/palettes/bleu.gif" border="0"></a>
+												<br>
+
+												<a href="system/post/send_design.php3?color=green" class="menu8">
+												<img src="system/images/palettes/vert.gif" border="0"></a>
+												<br>
+
+												<a href="system/post/send_design.php3?color=red" class="menu8">
+												<img src="system/images/palettes/rouge.gif" border="0"></a>
+												<br>
+
+												<a href="system/post/send_design.php3?color=violet" class="menu8">
+												<img src="system/images/palettes/violet.gif" border="0"></a>
+												<br>
+
+												<a href="system/post/send_design.php3?color=gray" class="menu8">
+												<img src="system/images/palettes/gris.gif" border="0"></a>
+												<br>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td class=m10 valign="top" width="90%">
+			<table border="0" cellpadding="1" cellspacing="0" width="100%">
+				<tr>
+					<td class=m10 width="100%" valign="top">
+
+
+
+
+<div style="padding:2px;" class="bordure">
+	<div style="text-align:center;font-size:16px;font-weight:bold;color:white;" class="news_entete"><a href="system/post/pdf/generatepdf.php?id=§§zs:fichier§§"><img src="system/images/pictos/pdf.png" border="0" align="right" hspace="5"></a><a href="article_printer§§zs:fichier§§"><img src="system/images/pictos/imprimante.gif" border="0" align="right" hspace="5"></a>Classes et objets III</div>
+	<div style="padding-top:10px;padding-left:5px;padding-right:5px;font-size:12px" class="fond_news">
+		<b>La sortie de PHP5 va amener à revoir ce tuto de Nikoh, qui reste valable pour PHP4. </b><br><br><br>
+
+<div style="padding-left:5px;">
+<font SIZE=4>Partie 3: Sérialisation et points importants</font>
+<ul><p>
+
+Un dernier thème important reste à aborder, c'est la sérialisation des objets afin de pouvoir les manipuler simplement. Nous irons alors plus loin avec un petit morceau sur des fonctions parfois utiles (mais facultatives) pour la sérialisation.<br>
+Un dernier point très important restera les notions de "composition ou héritage ?" qui doivent vous guider dans l'étape de conception d'un projet.
+</p>
+
+<table WIDTH=95% BGCOLOR="#FFC8C8" CLASS="m9"><tr><td>
+<b>Prérequis: </b> Les deux premières parties du tutoriel, passage de variables entre deux pages
+</td></tr></table>
+</ul>
+
+<b CLASS="partie">I) La sérialisation: fonctionnement et intêrets</b>
+
+<ul>
+<p>
+La sérialisation est un moyen simple de sauvegarder vos objets (dans une variable,  un fichier, une base sql,...) afin de les réutiliser ultérieurement. 
+Vous pouvez notamment passer un objet d'une page à une autre.<br>
+Pour cela on dispose des deux fonctions suivantes:<br><br>
+$chaine = serialize ($objet);<br>
+$objet = unserialize ($chaine);
+</p>
+
+<p>
+La fonction serialize permet donc de convertir un objet passé en paramètre en une variable chaine contenant la valeur de chacune des variables membres de l'objet à sérialiser.<br>
+La fonction unserialize effectue l'opération inverse.
+</p>
+
+
+<table WIDTH=95% BGCOLOR="#FFC8C8" CLASS="m9"><tr><td>
+La fonction serialize ne sauvegarde en aucun cas les fonctions membres d'un objet. Ainsi, lors de l'appel à la fonction unserialize, la classe correspondante 
+doit être déclarée. On voit ici l'interêt de mettre les classes dans des fichiers séparés. (si vous ne voyez pas l'interêt, regardez l'exemple suivant)
+</td></tr></table>
+
+<p>
+Créons deux pages: index.php et genre.php basées sur les classes CompactDisc et CDAudio définies dans les fichiers respectifs CompactDisc.class.php et CDAudio.class.php (voir tutoriel précédent)<br>
+Sur la page index, une liste de plusieurs CDAudio est présentée et chacun d'entre eux possède un lien vers la page genre.php qui se chargera d'afficher le genre musical du CDAudio choisis.<br>
+Pour réaliser cela, le lien contenu dans index.php pointeras vers genre.php en passant en paramètre un objet sérialisé. Tout sera plus clair avec le code suivant:
+</p>
+
+<p>
+<table WIDTH=95% BGCOLOR="#E8E8E8" CLASS="m9"><tr><td>
+<center><b>Fichier "index.php"</b></center>
+<hr>
+<pre><code><font color="#000000"><font color="#0000CC">&lt;?php
+<br> </font><font color="#006600">include (</font><font color="#CC0000">"CompactDisc.class.php"</font><font color="#006600">);
+<br> include (</font><font color="#CC0000">"CDAudio.class.php"</font><font color="#006600">);
+<br>
+<br> </font><font color="#0000CC">$cd </font><font color="#006600">= new </font><font color="#0000CC">CDAudio</font><font color="#006600">();
+<br> </font><font color="#0000CC">$cd</font><font color="#006600">-&gt;</font><font color="#0000CC">titre </font><font color="#006600">= </font><font color="#CC0000">"Rock'n PHP"</font><font color="#006600">;
+<br> </font><font color="#0000CC">$cd</font><font color="#006600">-&gt;</font><font color="#0000CC">dateAchat </font><font color="#006600">= </font><font color="#CC0000">"25/12/2001"</font><font color="#006600">;
+<br> </font><font color="#0000CC">$cd</font><font color="#006600">-&gt;</font><font color="#0000CC">genreMusical </font><font color="#006600">= </font><font color="#CC0000">"Rock"</font><font color="#006600">;
+<br>
+<br> </font><font color="#0000CC">$cdSerial </font><font color="#006600">= </font><font color="#0000CC">serialize</font><font color="#006600">(</font><font color="#0000CC">$cd</font><font color="#006600">);
+<br> </font><font color="#0000CC">$param </font><font color="#006600">= </font><font color="#0000CC">urlencode</font><font color="#006600">(</font><font color="#0000CC">$cdSerial</font><font color="#006600">);
+<br>
+<br> echo </font><font color="#CC0000">"&lt;A HREF='genre.php?var=$param'&gt;Afficher le genre&lt;/A&gt;"</font><font color="#006600">;
+<br></font><font color="#0000CC">?&gt;</font></font></code>
+</pre></td></tr></table>
+</p>
+
+
+<p>
+<table WIDTH=95% BGCOLOR="#E8E8E8" CLASS="m9"><tr><td>
+<center><b>Fichier "genre.php"</b></center>
+<hr>
+<pre>
+<code><font color="#000000"><font color="#0000CC">&lt;?
+<br> </font><font color="#006600">include (</font><font color="#CC0000">"CompactDisc.class.php"</font><font color="#006600">);
+<br> include (</font><font color="#CC0000">"CDAudio.class.php"</font><font color="#006600">);
+<br>
+<br> </font><font color="#0000CC">$param </font><font color="#006600">= </font><font color="#0000CC">stripslashes</font><font color="#006600">(</font><font color="#0000CC">urldecode</font><font color="#006600">(</font><font color="#0000CC">$var</font><font color="#006600">));
+<br> </font><font color="#0000CC">$cdDeSerial </font><font color="#006600">= </font><font color="#0000CC">unserialize </font><font color="#006600">(</font><font color="#0000CC">$param</font><font color="#006600">);
+<br>
+<br> echo </font><font color="#0000CC">$cdDeSerial</font><font color="#006600">-></font><font color="#0000CC">afficherGenreMusical</font><font color="#006600">();    
+<br></font><font color="#0000CC">?&gt;</font></font></code>
+</pre></td></tr></table>
+</p>
+
+<p>
+Ce qui donne:
+</p>
+
+<p>
+<table WIDTH=95% BGCOLOR="#E8E8E8" CLASS="m9"><tr><td>
+<center><b>Exécution de "index.php"</b></center>
+<hr><a HREF='genre.php?var=O%3A7%3A%22cdaudio%22%3A3%3A%7Bs%3A5%3A%22titre%22%3Bs%3A10%3A%22Rock%27n+PHP%22%3Bs%3A9%3A%22dateAchat%22%3Bs%3A10%3A%2225%2F12%2F2001%22%3Bs%3A12%3A%22genreMusical%22%3Bs%3A4%3A%22Rock%22%3B%7D'>Afficher le genre</a> (inutile de cliquer sur ce lien...)
+</td></tr></table>
+</p>
+
+<p>
+<table WIDTH=95% BGCOLOR="#E8E8E8" CLASS="m9"><tr><td>
+<center><b>Après le clic sur le lien</b></center>
+<hr>
+Le genre musical est: Rock
+</td></tr></table>
+</p>
+
+<p>
+Pour information, après sérialisation de l'objet $cd dans index.php, la variable $cdSerial reçoit la chaine de caractères:<br><br>
+O:7:"cdaudio":3:{s:5:"titre";s:10:"Rock'n PHP";s:9:"dateAchat";s:10:"25/12/2001";s:12:"genreMusical";s:4:"Rock";}<br><br>
+Vous y reconnaitrez le nom de la classe et les variables membres de l'objet, composées de leur nom et de leur valeur.
+</p>
+
+<p>
+Quelques éclaircissements sont nécessaires sur les appels aux fonctions urlencode(), urldecode() et stripslashes(). Dans notre exemple, nous avons passé notre
+objet, après serialisation, via une URL (ie un appel du type <i>http://domaine.com/index.php?nomDeVariable=valeur</i>).<br>
+Vous devez savoir que tous les caractères ne sont pas permis. Ainsi, il est nécessaire d'utiliser la fonction urlencode pour les remplacer, puis urldecode pour
+ revenir à l'état précédent. La fonction stripslashes permet quant à elle de retirer les "\" ajoutés par urlencode() et non retirés par urldecode().<br><br>
+Le reste est assez explicite, n'hésitez pas à essayer vous même pour bien comprendre le fonctionnement du système.
+</p>
+
+<p>
+Au travers de cet exemple, nous avons vu le fonctionnement principal de la serialisation. Notez qu'un objet serialisé peut être enregistré dans un fichier ou dans un champ d'une base MySQL (dans ce cas, préferez des types "text" plutot que varchar car vous ne connaissez pas, à priori, la taille de la variable contenant l'objet sérialisé à enregistrer).
+</p>
+
+</ul>
+
+<b CLASS="partie">II) Fonctions __sleep et __wakeup</b>
+<ul>
+<p>
+Ces deux fonctions, lorsqu'elles sont déclarées comme fonctions membres d'une classe peuvent s'avérer très pratiques. En effet, la fonction serialize() cherche si la fonction __sleep est définie et l'appelle automatiquement le cas échéant, <b>avant</b> d'effectuer la sérialisation.<br>
+A l'inverse, la fonction unserialize() cherche si la fonction __wakeup() est définie et l'appelle automatiquement le cas échéant, <b>après</b> avoir effectué la déserialisation.
+</p>
+
+<p>
+L'intérêt de la fonction __sleep() est de permettre un "nettoyage" de l'objet si nécessaire et/ou de fermer la connection à une base de données. La fonction __wakeup est principalement utilisée pour rétablir une connection à une base de données.
+</p>
+
+<p>
+<table WIDTH=95% BGCOLOR="#FFC8C8" CLASS="m9"><tr><td>
+La fonction __sleep() doit impérativement retourner sous forme d'un tableau la liste des variables membres à serialiser. Ceci permet de décider quelles variables doivent être sauvegardées et lesquelles doivent être ignorées (des variables temporaires ou dépendant du contexte, par exemple).
+</td></tr></table>
+</p>
+
+<p>
+Modifions la classe CDAudio pour appliquer tout ceci:
+</p>
+
+<p>
+<table WIDTH=95% BGCOLOR="#E8E8E8" CLASS="m9"><tr><td>
+<center><b>Fichier "CDAudio.class.php"</b></center>
+<hr>
+<pre>
+<code><font color="#000000"><font color="#0000CC">&lt;?php
+<br> </font><font color="#006600">class </font><font color="#0000CC">CDAudio </font><font color="#006600">extends </font><font color="#0000CC">CompactDisc </font><font color="#006600">{
+<br> var </font><font color="#0000CC">$genreMusical </font><font color="#006600">;
+<br>
+<br> function </font><font color="#0000CC">afficherGenreMusical</font><font color="#006600">() {
+<br> echo </font><font color="#CC0000">"&lt;BR&gt;Le genre musical est: "</font><font color="#006600">.</font><font color="#0000CC">$this</font><font color="#006600">-&gt;</font><font color="#0000CC">genreMusical</font><font color="#006600">;
+<br> }
+<br>
+<br> function </font><font color="#0000CC">__sleep</font><font color="#006600">() {
+<br> </font><font color="#FF9900">// Fermeture d'une connection MySQL:
+<br> </font><font color="#0000CC">mysql_close</font><font color="#006600">();
+<br>
+<br> </font><font color="#0000CC">$ASauver</font><font color="#006600">[</font><font color="#0000CC">0</font><font color="#006600">] = </font><font color="#CC0000">"titre"</font><font color="#006600">;
+<br> </font><font color="#0000CC">$ASauver</font><font color="#006600">[</font><font color="#0000CC">1</font><font color="#006600">] = </font><font color="#CC0000">"dateAchat"</font><font color="#006600">;
+<br> </font><font color="#0000CC">$ASauver</font><font color="#006600">[</font><font color="#0000CC">2</font><font color="#006600">] = </font><font color="#CC0000">"genreMusical"</font><font color="#006600">;
+<br> return </font><font color="#0000CC">$ASauver</font><font color="#006600">;
+<br> }
+<br>
+<br> function </font><font color="#0000CC">__wakeup</font><font color="#006600">() {
+<br> </font><font color="#FF9900">// Réouverture d'une connection MySQL:
+<br> </font><font color="#0000CC">mysql_connect</font><font color="#006600">(</font><font color="#CC0000">"serveur"</font><font color="#006600">, </font><font color="#CC0000">"utilisateur"</font><font color="#006600">, </font><font color="#CC0000">"motDePasse"</font><font color="#006600">);
+<br> </font><font color="#0000CC">mysql_select_db</font><font color="#006600">(</font><font color="#CC0000">"base"</font><font color="#006600">);
+<br> }
+<br> }
+<br></font><font color="#0000CC">?&gt;</font></font></code></pre></td></tr></table>
+</p>
+
+<p>
+Dans ce cas, les 3 variables membres $titre, $dateAchat et $genreMusical seront incluses dans la sérialisation. Ainsi, l'appel à serialize() appellera __sleep() qui se chargera de fermer la connection MySQL; l'appel à unserialize() appellera __wakeup() qui se chargera d'ouvrir une connection MySQL.<br>
+</p>
+</ul>
+
+<b CLASS="partie">III) Opérateur de Résolution de Portée (ORP) et mot clé "parent"</b>
+<ul>
+<p>
+Si vous avez des difficultés avec tout ce qu'on a vu jusqu'à présent, sautez ce paragraphe, il ne vous apportera rien...
+</p>
+
+<p>
+L'ORP est noté :: et permet d'accéder à une fonction membre dans les cas suivants:<br>
+- En l'absence d'instance de la classe, on peut ainsi accéder à des fonctions membres de la classe (qui ne devraient donc pas dépendre de variables membres).<br>
+- Pour appeller une fonction membre d'une classe de base à partir de la redéfinition de celle-ci dans une classe héritée (exemple ci-dessous)
+</p>
+
+
+<p>
+<table WIDTH=95% BGCOLOR="#E8E8E8" CLASS="m9"><tr><td><pre>
+<code><font color="#000000"><font color="#0000CC">&lt;?php
+<br> </font><font color="#006600">class </font><font color="#0000CC">Vehicule </font><font color="#006600">{
+<br> function </font><font color="#0000CC">acheter</font><font color="#006600">() {
+<br> echo </font><font color="#CC0000">"Fonction membre acheter de la classe Vehicule"</font><font color="#006600">;
+<br> }
+<br> }
+<br>
+<br> class </font><font color="#0000CC">Voiture </font><font color="#006600">extends </font><font color="#0000CC">Vehicule </font><font color="#006600">{
+<br> function </font><font color="#0000CC">acheter</font><font color="#006600">() {
+<br> echo </font><font color="#CC0000">"Fonction membre acheter de la classe Voiture"</font><font color="#006600">;
+<br> </font><font color="#FF9900">// On appelle également celle de la classe de base:
+<br> </font><font color="#0000CC">Vehicule</font><font color="#006600">::</font><font color="#0000CC">acheter</font><font color="#006600">();
+<br> }
+<br> }
+<br></font><font color="#0000CC">?&gt;</font></font></code>
+</pre></td></tr></table>
+</p>
+
+<p>
+De la même façon, le mot clé <i>parent</i> associé à l'ORP permet de désigner génériquement la classe de base à partir d'une classe héritée.<br>
+Ainsi, on aurait pu, dans l'exemple précédent, remplacer la ligne<br>
+<pre>Vehicule::acheter();</pre>
+par:
+<pre>parent::acheter();</pre><br>
+Le mot clé <i>parent</i>, tout comme le mot clé <i>this</i> ne peut bien sur être utilisé qu'à l'intérieur d'une classe. De plus <i>parent</i> ne peut être utilisé que si la classe courante dérive d'une autre classe.
+</p>
+</ul>
+
+<b CLASS="partie">IV) Programmation par composition</b>
+<ul>
+<p>
+Pour compléter ce tour d'horizon, il me semblait nécessaire d'aborder un sujet très important en programmation objet. Vous devez être parfaitement conscient de ces idées lorsque vous concevrez une architecture de classes.
+</p>
+
+<p>
+Je ne reviendrai pas sur l'héritage étudié précedemment. La notion de composition (il existe de nombreux termes synonymes) est toute simple. Elle correspond à l'utilisation, en tant que variable membre d'une classe, d'un objet issu d'une autre classe. Il existe donc une relation entre ces deux classes puisque la première ne peut "vivre" sans la deuxième (la réciproque étant fausse).
+</p>
+
+<p>
+Exemple simple:
+<table WIDTH=95% BGCOLOR="#E8E8E8" CLASS="m9"><tr><td><pre>
+<code><font color="#000000"><font color="#0000CC">&lt;?php
+<br> </font><font color="#006600">class </font><font color="#0000CC">Homme </font><font color="#006600">{
+<br> var </font><font color="#0000CC">$nom</font><font color="#006600">, </font><font color="#0000CC">$prenom</font><font color="#006600">;
+<br>
+<br> function </font><font color="#0000CC">Homme </font><font color="#006600">(</font><font color="#0000CC">$strNom</font><font color="#006600">, </font><font color="#0000CC">$strPrenom</font><font color="#006600">) {
+<br> </font><font color="#FF9900">// Constructeur de la classe
+<br> </font><font color="#0000CC">$this</font><font color="#006600">-&gt;</font><font color="#0000CC">nom</font><font color="#006600">=</font><font color="#0000CC">$strNom</font><font color="#006600">;
+<br> </font><font color="#0000CC">$this</font><font color="#006600">-&gt;</font><font color="#0000CC">prenom</font><font color="#006600">=</font><font color="#0000CC">$strPrenom</font><font color="#006600">;
+<br> }
+<br>
+<br> function </font><font color="#0000CC">afficherIdentite </font><font color="#006600">() {
+<br> echo </font><font color="#0000CC">$this</font><font color="#006600">-&gt;</font><font color="#0000CC">nom</font><font color="#006600">.</font><font color="#CC0000">"&lt;BR&gt;"</font><font color="#006600">.</font><font color="#0000CC">$this</font><font color="#006600">-&gt;</font><font color="#0000CC">prenom</font><font color="#006600">.</font><font color="#CC0000">"&lt;BR&gt;"</font><font color="#006600">;
+<br> }
+<br> }
+<br>
+<br>
+<br> class </font><font color="#0000CC">Livre </font><font color="#006600">{
+<br> var </font><font color="#0000CC">$titre</font><font color="#006600">, </font><font color="#0000CC">$auteur</font><font color="#006600">;
+<br>
+<br> function </font><font color="#0000CC">Livre </font><font color="#006600">(</font><font color="#0000CC">$strTitre</font><font color="#006600">) {
+<br> </font><font color="#FF9900">// Constructeur de la classe
+<br> </font><font color="#0000CC">$this</font><font color="#006600">-&gt;</font><font color="#0000CC">titre </font><font color="#006600">= </font><font color="#0000CC">$strTitre</font><font color="#006600">;
+<br> </font><font color="#0000CC">$this</font><font color="#006600">-&gt;</font><font color="#0000CC">auteur </font><font color="#006600">= new </font><font color="#0000CC">Homme </font><font color="#006600">(</font><font color="#CC0000">"Lerdorf"</font><font color="#006600">, </font><font color="#CC0000">"Rasmus"</font><font color="#006600">);
+<br> }
+<br>
+<br> function </font><font color="#0000CC">afficherInfos</font><font color="#006600">() {
+<br> echo </font><font color="#0000CC">$this</font><font color="#006600">-&gt;</font><font color="#0000CC">titre</font><font color="#006600">.</font><font color="#CC0000">"&lt;BR&gt;"</font><font color="#006600">;
+<br> </font><font color="#0000CC">$this</font><font color="#006600">-&gt;</font><font color="#0000CC">auteur</font><font color="#006600">-&gt;</font><font color="#0000CC">afficherIdentite</font><font color="#006600">();
+<br> }
+<br> }
+<br>
+<br> </font><font color="#0000CC">$php </font><font color="#006600">= new </font><font color="#0000CC">Livre</font><font color="#006600">(</font><font color="#CC0000">"PHP Facile"</font><font color="#006600">);
+<br> </font><font color="#0000CC">$php</font><font color="#006600">-&gt;</font><font color="#0000CC">afficherInfos</font><font color="#006600">();
+<br></font><font color="#0000CC">?&gt;</font></font></code>
+</pre></td></tr></table>
+</p>
+
+<p>
+Ce qui donne bien sur le résultat escompté...
+</p>
+
+<p>
+<table WIDTH=95% BGCOLOR="#FFC8C8" CLASS="m9"><tr><td>
+Gardez toujours en tête les notions d'héritage et de composition lors de la conception de vos classes. Néanmoins, ne vous forcez pas à utiliser ces deux systèmes pour chaque classe !
+</td></tr></table>
+</p>
+</ul>
+
+
+<b CLASS="partie">V) Conclusion: le futur</b>
+<ul>
+<p>
+Le futur de la programmation objet en PHP est très chargé. Le moteur objets de PHP 5 sera bien plus performant et plus puissant et ce tout en restant très simple d'emploi.
+</p>
+
+<p>
+A cela, il faudra ajouter PEAR qui deviendra un outil très simple d'emploi et permettra de réaliser encore plus facilement de nombreuses taches. En effet, PEAR sera tout simplement une architecture de classes destinées à être utilisées par les programmeurs PHP que vous êtes. D'après les tendances, on peut prédire que PEAR deviendra un composant incontournable et essentiel de PHP dans les mois qui viennent. Des connaissances en programmation objet (notamment pour se servir des classes de PEAR ou les adapter à vos propres besoins par l'héritage) seront absolument nécessaires... 
+</p>
+
+<p>
+J'espère donc que cette série de 3 tutoriels vous auront permis d'y arriver !
+</p>
+</ul>
+
+<br><br>
+
+<div ALIGN="center">
+<a HREF="mailto:nykoh@phpdebutant.com">Nykoh</a>
+</div>
+
+
+</div>
+	</div>
+</div>
+
+<br><br>
+
+<form action="system/post/article_msg.php" method="post">
+	<input type="hidden" name="article" value="44">
+	<input type="hidden" name="idsite" value="1">
+<table border="0" cellpadding="1" cellspacing="0" align="center">
+
+	<tr>
+
+		<td class="bordure">
+
+			<table border="0" cellpadding="6" cellspacing="0" class="fond_news">
+
+				<tr>
+
+					<td class="news_entete" style="text-align:center;color:#E2E3B1;">Ajouter une r&eacute;ponse</td>
+
+				</tr>
+
+				<tr>
+
+					<td><input type="text" name="auteur" size="38" value=""> Nom</td></tr>
+
+				<tr>
+
+					<td><input type="text" name="email" size="38" value=""> Email</td>
+
+				</tr>
+
+				<tr>
+
+					<td><input type="text" name="titre" size="38" value=""> Titre</td>
+
+				</tr>
+
+				<tr>
+
+					<td valign="top"><textarea rows="10" name="contenu" cols="43" WRAP="virtual"></textarea></td>
+
+				</tr>
+            <tr>
+               <td>			<p class="forumpara">Mise en forme : gras = [b]...[/b], italic = [i]...[/i], soulign&eacute; = [u]...[/u],
+         citation = [quote]...[/quote], lien = [url]liens_externe[/url] ou [url nom=texte]liens_externe[/url],
+         code source : [code]...[/code]
+         </p>
+</td>
+            </tr>
+				<tr>
+
+					<td>M&eacute;moriser mon nom et mon email :
+
+						<input type="radio" name="memorisation" value="1" checked>Oui
+
+						<input type="radio" name="memorisation" value="0"> Non
+
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td align="center"><input type="submit" value="Poster le message ..."></td>
+
+				</tr>
+
+			</table>
+
+		</td>
+
+	</tr>
+
+</table>
+
+
+</form>
+
+					</td>
+				</tr>
+				<tr>
+					<td class=m10 width="100%" valign="top" height="22">
+					<div class="m8" style="text-align:center;color:#969090;padding-top:20px;">www.phpdebutant.org © 2013 - L'équipe de phpDebutant - Hébergement : <a href="http://www.wdmedia-hebergement.net" target="_blank" class="hebergement">WDMédia-hébergement</a></div>
+<a href="system/post/aspiro_sucks.php"><img src="system/images/blank.gif" border="0" width="1px" height="1px"/></a>
+
+					</td>
+				</tr>
+			</table>
+		</td>
+		<!-- debut colonne de droite -->
+		<td class=m10 width="130" valign="top">
+			<table border="0" cellpadding="1" cellspacing="0" width="130" class="bordure">
+				<tr>
+					<td class=m10 width="130" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%" class="fond_menu">
+							<tr>
+								<td width="100%" align="center" class="news_entete" height="20" valign="middle">
+									<div class="color_titre_menu">DEBUTEZ !</div></b>
+								</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;0.&nbsp;</td>
+											<td align="left"><a href="article118.php" target="_self" class="menu8">Introduction</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;1.&nbsp;</td>
+											<td align="left"><a href="article14.php" target="_self" class="menu8">Afficher une phrase ou une image</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;2.&nbsp;</td>
+											<td align="left"><a href="article53.php" target="_self" class="menu8">Afficher la date et l'heure</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;3.&nbsp;</td>
+											<td align="left"><a href="article54.php" target="_self" class="menu8">PHP dans du code HTML</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;4.&nbsp;</td>
+											<td align="left"><a href="article55.php" target="_self" class="menu8">La concaténation</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;5.&nbsp;</td>
+											<td align="left"><a href="article56.php" target="_self" class="menu8">Récupérer les valeurs d'un formulaire</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;6.&nbsp;</td>
+											<td align="left"><a href="article57.php" target="_self" class="menu8">Les structures de contrôle</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;7.&nbsp;</td>
+											<td align="left"><a href="article58.php" target="_self" class="menu8">Ecrire et lire dans un fichier texte</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;8.&nbsp;</td>
+											<td align="left"><a href="article59.php" target="_self" class="menu8">Les fonctions utilisateurs</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;9.&nbsp;</td>
+											<td align="left"><a href="article60.php" target="_self" class="menu8">Les variables d'environnement</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;10.&nbsp;</td>
+											<td align="left"><a href="article61.php" target="_self" class="menu8">Quelques fonctions utiles</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;11.&nbsp;</td>
+											<td align="left"><a href="article62.php" target="_self" class="menu8">SQL/MySQL (Create, Alter & Drop)</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;12.&nbsp;</td>
+											<td align="left"><a href="article63.php" target="_self" class="menu8">SQL/MySQL (Insert et Select)</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;13.&nbsp;</td>
+											<td align="left"><a href="article64.php" target="_self" class="menu8">SQL/MySQL (Delete et Update)</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;14.&nbsp;</td>
+											<td align="left"><a href="article117.php" target="_self" class="menu8">SQL/MySQL (Where)</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;15.&nbsp;</td>
+											<td align="left"><a href="article65.php" target="_self" class="menu8">Fonctions PHP pour mySQL</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;16.&nbsp;</td>
+											<td align="left"><a href="article66.php" target="_self" class="menu8">Interroger une table MySQL</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;17.&nbsp;</td>
+											<td align="left"><a href="article67.php" target="_self" class="menu8">Alimenter une ou plusieurs tables mySQL</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;18.&nbsp;</td>
+											<td align="left"><a href="article68.php" target="_self" class="menu8">Les pseudos-frames</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;19.&nbsp;</td>
+											<td align="left"><a href="article69.php" target="_self" class="menu8">Les sessions php4</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;20.&nbsp;</td>
+											<td align="left"><a href="article84.php" target="_self" class="menu8">Affichage page par page</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;21.&nbsp;</td>
+											<td align="left"><a href="article111.php" target="_self" class="menu8">Images dynamiques</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;22.&nbsp;</td>
+											<td align="left"><a href="article112.php" target="_self" class="menu8">Ca marche pas ?</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;23.&nbsp;</td>
+											<td align="left"><a href="article113.php" target="_self" class="menu8">Variables globales à OFF</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td align="left" valign="top">&nbsp;&nbsp;24.&nbsp;</td>
+											<td align="left"><a href="article119.php" target="_self" class="menu8">Les variables dynamiques</td>
+										</tr>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</table>
+									
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4665318-5");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
+
+
+
+<!-- Page générée par zionSys sur c1web521.wdmedia.net en 0,0985 s  sans cache-->

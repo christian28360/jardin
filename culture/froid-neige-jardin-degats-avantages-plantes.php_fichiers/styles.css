@@ -1,0 +1,1962 @@
+body {
+	font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+	color: #333333;
+	font-size: 12px;
+	margin: 0;
+	background: #7FAD27 url('http://static.gerbeaud.com/img/bg_body.jpg')
+		repeat-x;
+}
+
+/* titres */
+h1,h2,h3,h4,h5,h6 {
+	margin: 10px 0;
+}
+
+h1 {
+	font-size: 18px;
+}
+
+h2 {
+	font-size: 12px;
+	color: #000;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+	text-decoration: none;
+}
+
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover {
+	text-decoration: underline;
+}
+
+/* Liens */
+a:link {
+	color: #4A7300;
+}
+
+a:visited {
+	color: #4A7300;
+}
+
+a:hover,a:focus,a:active {
+	color: #000000;
+}
+
+a img {
+	border: none;
+}
+
+/* pour png IE6*/
+img,div,a,a:hover,input,p {
+	behavior: url('iepngfix.htc');
+}
+
+/* float */
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Formulaires */
+form,fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+input,button,select {
+	vertical-align: middle;
+}
+
+input,select {
+	height: 20px;
+	line-height: 20px;
+	padding: 0 5px;
+	color: #909090;
+	font-size: 12px;
+	border: 1px solid #d7d7d7;
+}
+
+/* Tableaux */
+table {
+	margin: 0;
+	border: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table td,table th {
+	padding: 5px;
+	vertical-align: top;
+}
+
+/*------ BLOCS GENERAUX -------*/
+#wrap {
+	width: 1000px;
+	margin: 0 auto 20px auto;
+} /* contient tout le site */
+#header {
+	width: 1000px;
+	height: 125px;
+	margin: 12px 0 0 0;
+}
+
+#main {
+	width: 980px;
+	margin: 0 auto;
+	padding: 20px 10px;
+	overflow: hidden;
+	background: #fff;
+} /* contient les blocs content et sidebar */
+.center_content {
+	width: 525px;
+	float: left;
+	margin: 0 10px 0 20px;
+	overflow: hidden;
+	height: 1%;
+} /* bloc contenu principal au centre */
+.left_content { /* colonne gauche */
+	width: 125px;
+	float: left;
+	overflow: hidden;
+	height: 1%;
+}
+
+.right_content { /* colonne droite */
+	width: 300px;
+	float: left;
+	overflow: hidden;
+	height: 1%;
+}
+
+/*------- PUBS ----------------*/
+#pub_top {
+	width: 730px;
+	height: 90px;
+	margin: 0 auto;
+}
+
+.pub_right {
+	background: url('http://static.gerbeaud.com/img/bg_pub_right.gif') 0 0
+		no-repeat;
+	clear: both;
+	padding-top: 15px;
+	width: 306px;
+}
+
+/*-------------------------------*/
+/*----------- HEADER ------------*/
+#logo {
+	float: left;
+	margin: 12px 0 0 0;
+}
+
+#logo a {
+	width: 332px;
+	height: 49px;
+	display: block;
+	text-indent: -9999px;
+	background: transparent url('http://static.gerbeaud.com/img/logo.png')
+		no-repeat;
+}
+
+/*---------- BLOC NEWSLETTER + RECHERCHE --------------*/
+#bloc_search_news {
+	width: 592px;
+	height: 67px;
+	float: right;
+	margin: 0 0 12px 0;
+	background: transparent
+		url('http://static.gerbeaud.com/img/bg_search.png') no-repeat;
+}
+
+/* newsletter */
+#bloc_search_news #newsletter {
+	width: 285px;
+	float: left;
+	padding: 0 0 0 15px;
+	background: url('http://static.gerbeaud.com/img/bg_news.jpg') center
+		right no-repeat;
+}
+
+#bloc_search_news #newsletter form {
+	width: 188px;
+	float: left;
+	margin: 0 10px 0 0;
+	border-right: 1px solid #7cb40e;
+}
+
+#bloc_search_news #newsletter input {
+	width: 135px;
+	margin: 0 5px 0 0;
+}
+
+#bloc_search_news #newsletter p {
+	padding: 0 0 0 25px;
+	background: transparent
+		url('http://static.gerbeaud.com/img/picto_newsletter.png') 0 0
+		no-repeat;
+}
+
+#bloc_search_news #newsletter a {
+	font-size: 11px;
+	color: #fed00a;
+	line-height: 12px;
+}
+
+#bloc_search_news #newsletter a:hover {
+	text-decoration: none;
+}
+
+/* recherche */
+#bloc_search_news #search {
+	width: 270px;
+	float: right;
+	padding: 0 10px 0 0;
+}
+
+#bloc_search_news #newsletter p,#bloc_search_news #search p {
+	margin: 10px 0 5px 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+#bloc_search_news #search p {
+	padding: 0 0 0 25px;
+	background: transparent
+		url('http://static.gerbeaud.com/img/picto_search.png') 0 0 no-repeat;
+}
+
+#bloc_search_news #search input {
+	width: 232px;
+}
+
+#bloc_search_news #newsletter .submit,#bloc_search_news #search .submit
+	{
+	width: 21px !important;
+	height: 18px !important;
+	line-height: 18px !important;
+	padding: 0 0 5px 0;
+	margin: 0;
+	font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;
+	text-align: center;
+	font-weight: bold;
+	color: #4A7300;
+	cursor: pointer;
+	border: 0;
+	background: transparent
+		url('http://static.gerbeaud.com/img/submit_search.png') no-repeat;
+}
+
+#bloc_search_news #newsletter .submit:hover,#bloc_search_news #search .submit:hover
+	{
+	color: #000;
+}
+
+/*---------- NAV --------------*/
+#nav {
+	width: 1000px;
+	height: 46px;
+	clear: both;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: url('http://static.gerbeaud.com/img/bg_menu.jpg') repeat-x;
+}
+
+#nav ul {
+	padding: 0;
+	margin: 0 auto;
+	height: 46px;
+	width: auto;
+}
+
+#nav ul li {
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 46px;
+	background: url('http://static.gerbeaud.com/img/bg_li_menu.jpg') top
+		right no-repeat;
+}
+
+/* onglet home */
+#nav ul li.accueil a {
+	width: 55px;
+	padding: 0;
+	text-indent: -9999px;
+	background: transparent
+		url('http://static.gerbeaud.com/img/picto_home.png') center no-repeat;
+}
+
+/* onglet home actif */
+#nav ul li.accueil.actif a {
+	background: transparent
+		url('http://static.gerbeaud.com/img/picto_home_actif.png') center
+		no-repeat !important;
+}
+/* onglet home rollover */
+#nav ul li.accueil a:hover {
+	background: transparent
+		url('http://static.gerbeaud.com/img/picto_home_hover.png') center
+		no-repeat !important;
+}
+
+#nav ul li.last {
+	background: none;
+}
+
+#nav ul li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* rollover */
+#nav ul li.actif:hover {
+	background: url('http://static.gerbeaud.com/img/bg_li_menu.jpg') top
+		right no-repeat;
+}
+
+#nav ul li a:hover,#nav ul li.accueil:hover {
+	color: #000;
+	background: url('http://static.gerbeaud.com/img/arrow_nav.png') center
+		bottom no-repeat;
+}
+
+/* onglet actif */
+#nav ul li.actif a {
+	color: #fed00a;
+	background: url('http://static.gerbeaud.com/img/arrow_nav.png') center
+		bottom no-repeat;
+}
+
+#nav ul li.nav01 {
+	width: 155px;
+}
+
+#nav ul li.nav02 {
+	width: 178px;
+}
+
+#nav ul li.nav03 {
+	width: 192px;
+}
+
+#nav ul li.nav04 {
+	width: 126px;
+}
+
+#nav ul li.nav05 {
+	width: 135px;
+}
+
+#nav ul li.nav06 {
+	width: 158px;
+}
+
+/*-------------- Plante en fond -------------*/
+#background {
+	width: 119px;
+	height: 76px;
+	position: absolute;
+	top: 26px;
+	margin: 0 0 0 880px;
+	background: url('http://static.gerbeaud.com/img/bg_plante.png')
+		no-repeat;
+}
+
+/*---------- MAIN ------------*/
+
+/*-------------------------------*/
+/*---------- CONTENT ------------*/
+
+/* bloc principal home */
+.center_content .bloc {
+	width: 515px;
+	margin: 0 0 20px 0;
+}
+
+.center_content .bloc h1 {
+	font-size: 18px;
+}
+
+.center_content .bloc img {
+	float: right;
+}
+
+/* blocs home */
+.center_content .bloc_sous_partie {
+	width: 230px;
+	float: left;
+	margin: 0 10px 10px 0;
+	padding: 10px;
+	font-size: 11px;
+	border: 1px dashed #E0E0E0;
+}
+
+.center_content .bloc_sous_partie img {
+	float: left;
+	margin: 0 10px 5px 0;
+}
+
+.center_content .bloc_sous_partie h3 {
+	margin: 0;
+	font-size: 11px;
+	color: #000;
+}
+
+.center_content .bloc_sous_partie h2 {
+	font-size: 14px;
+}
+
+.tags a {
+	padding: 0 10px 0 0;
+	font-weight: bold;
+	color: #8f8f8f;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.tags a:hover {
+	color: #4A7300;
+	text-decoration: underline;
+}
+
+.tags ul {
+	display: inline;
+	padding: 0 0 0 10px;
+}
+
+/*--------- Article ----------------*/
+.center_content .article {
+	width: 515px;
+}
+
+.center_content .article  h1 {
+	font-size: 22px;
+}
+
+.center_content .article  h2 {
+	font-size: 12px;
+	padding: 0 0 0 20px;
+	margin: 15px 0;
+	background: url('http://static.gerbeaud.com/img/feuille_titre.gif')
+		no-repeat;
+}
+
+.center_content .article h3 {
+	font-size: 12px;
+	margin: 8px 0 5px 0;
+}
+
+.center_content .article p {
+	margin: 0 0 10px 0;
+}
+
+.center_content .article .chapo {
+	color: #162B02;
+	font-weight: bold;
+	margin: 10px 0 20px 0;
+	text-align: justify;
+}
+
+.center_content .article img.right {
+	margin: 0 0 5px 10px;
+}
+
+.center_content .bloc_astuce {
+	background: #EEEEEE;
+	border-bottom: 1px solid #999999;
+	border-top: 1px solid #999999;
+	clear: both;
+	color: #000000;
+	padding: 0 15px;
+	margin: 20px 0 30px 0;
+	text-align: justify;
+}
+
+/* bloc astuce */
+.center_content .bloc_astuce p {
+	margin: 5px 0 10px 0;
+}
+
+/* mentions crédits photos */
+.center_content  .article .credit-photos { /* XG */
+	color: #666666;
+	font-size: 8pt;
+	margin: 0 30px 15px 0;
+	text-align: right;
+}
+
+/* tags */
+.center_content .article div.tags {
+	clear: both;
+	margin: 5px 0 5px 0;
+	padding: 5px 0;
+}
+
+.tags ul li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* barre de partage */
+.center_content .article .share {
+	width: 515px;
+	height: 29px;
+	padding: 4px 0 0 0;
+	margin: 0 0 20px 0;
+	overflow: hidden;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.center_content .article .share .reagir,.center_content .article .share .recommander
+	{
+	padding: 0 0 0 20px;
+	margin: 5px 20px 0 0;
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 16px;
+	display: block;
+	float: left;
+	vertical-align: middle;
+}
+
+.center_content .article .share .reagir:hover,.center_content .article .share .recommander:hover
+	{
+	color: #4A7300;
+}
+
+.center_content .article .share .reagir {
+	background: url('http://static.gerbeaud.com/img/picto_reagir.jpg')
+		center left no-repeat;
+}
+
+.center_content .article .share .recommander {
+	background: url('http://static.gerbeaud.com/img/picto_recommander.jpg')
+		center left no-repeat;
+}
+
+.center_content .article .share .imprimer {
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	width: 22px;
+	height: 22px;
+	background: url('http://static.gerbeaud.com/img/picto_imprimer.jpg')
+		center no-repeat;
+}
+
+.center_content .article .share .envoyer {
+	display: block;
+	float: left;
+	margin: 0 5px 0 0;
+	width: 24px;
+	height: 24px;
+	background: url('http://static.gerbeaud.com/img/picto_envoyer.jpg')
+		center no-repeat;
+}
+
+.center_content .article .share .addthis_toolbox {
+	float: left;
+}
+
+.addthis_button_facebook,.addthis_button_twitter,.center_content .article .share .google_plus,.center_content .article .share .fb-like
+	{
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+.center_content .article .share .google_plus {
+	width: 70px;
+}
+
+.center_content .article .share .fb-like,.center_content .article .share .fb-like a,.center_content .article .share .fb-like iframe
+	{
+	width: 100px;
+}
+
+/* Partage Facebook */
+.addthis_button_facebook span,.FBConnectButton_Simple,.FBConnectButton_RTL_Simple
+	{
+	display: block;
+	float: left;
+	width: 24px !important;
+	height: 24px !important;
+	background: url('http://static.gerbeaud.com/img/facebook.jpg') 0 0
+		no-repeat !important;
+}
+
+/* Partage Twitter */
+.addthis_button_twitter span {
+	float: left;
+	display: block;
+	float: left;
+	width: 24px !important;
+	height: 24px !important;
+	background: url('http://static.gerbeaud.com/img/twitter.jpg') 0 0
+		no-repeat !important;
+}
+
+/* Bloc participez */
+.qr_gros_titre {
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.qr_sous_titre2 {
+	color: #333333;
+	font-size: 14px;
+	padding-bottom: 0;
+	padding-left: 10px;
+	padding-top: 0;
+}
+
+.qr_recap_nb {
+	color: #7EAD27;
+	font-size: 11px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-top: 2px;
+}
+
+.qr_titre_q {
+	background: url('http://static.gerbeaud.com/img/bg_question_off_qr.jpg')
+		no-repeat;
+	color: #000000;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: -1px;
+	margin-left: 10px;
+	margin-top: 3px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-top: 5px;
+}
+
+.qr_bt_autre_q {
+	font-weight: bold;
+	margin-bottom: -1px;
+	margin-left: 10px;
+	margin-top: 1px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+/*--------- Fil d'ariane -----------*/
+.fil {
+	width: 495px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 10px;
+	color: #000;
+	font-size: 11px;
+	background: url('http://static.gerbeaud.com/img/bg_fil_ariane.jpg')
+		repeat-x;
+}
+
+.fil ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.fil ul li {
+	padding: 0 0 0 20px;
+	float: left;
+	background: url('http://static.gerbeaud.com/img/picto_fil.gif') center
+		left no-repeat;
+}
+
+.fil a {
+	color: #000;
+}
+
+.fil a:hover {
+	text-decoration: none;
+}
+
+/* pub en bas */
+.pub_bottom {
+	background: url('http://static.gerbeaud.com/img/bg_pub_right.gif')
+		no-repeat;
+	clear: both;
+	height: 120px;
+	padding-top: 15px;
+	width: 515px;
+}
+
+.pub_bottom iframe {
+	width: 515px;
+	overflow: hidden;
+	border: 0;
+}
+
+/*-------------------------------*/
+/*---------- SIDEBAR GAUCHE ------------*/
+
+/* blocs */
+.left_content .bloc {
+	margin: 0 0 15px 0;
+	overflow: hidden;
+	height: 1%;
+}
+
+/* blocs */
+.left_content .bloc .bloc_cadre {
+	padding: 12px;
+	border: 1px solid #ececec;
+	overflow: hidden;
+	height: 1%;
+}
+
+/* titres des blocs*/
+.left_content .bloc .titre {
+	padding: 4px 12px;
+	line-height: 12px;
+	font-weight: bold;
+	color: #000;
+	background: #E5E5E5;
+	border-top: 1px solid #D4D4D4;
+}
+
+.left_content .bloc ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.left_content .bloc ul li a:hover {
+	color: #000;
+}
+
+.left_content .bloc ul h2 {
+	margin: 0;
+	overflow: hidden;
+	height: 1%;
+}
+
+.left_content .bloc ul li {
+	padding: 10px 0;
+	margin: 0;
+	line-height: 14px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.left_content .bloc ul li img {
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+/* bloc jardiner avec la lune */
+.left_content .bloc.lune img {
+	float: left;
+	margin: 0 8px 0 0;
+}
+
+.left_content .bloc.lune a {
+	padding: 0 0 0 12px;
+	display: block;
+	float: left;
+	width: 50px;
+	font-size: 11px;
+	background: url('http://static.gerbeaud.com/img/puce.png') 0 0 no-repeat;
+}
+
+/* bloc fiches pratiques */
+.left_content .bloc.fiches ul {
+	margin: 0;
+}
+
+.left_content .bloc.fiches ul li {
+	padding: 0 0 0 15px;
+	margin: 10px 0 0 0;
+	font-weight: bold;
+	border: 0;
+	background: url('http://static.gerbeaud.com/img/puce.png') left center
+		no-repeat;
+}
+
+.left_content .bloc.fiches ul li a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/*-------------------------------*/
+/*---------- SIDEBAR DROITE ------------*/
+.right_content .bloc_cadre {
+	padding: 12px;
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	background: #FDFDFB;
+	overflow: hidden;
+	height: 1%;
+}
+
+/* titres des blocs*/
+.right_content .titre {
+	padding: 4px 12px;
+	line-height: 12px;
+	font-weight: bold;
+	color: #000;
+	background: #E5E5E5;
+	border-top: 1px solid #D4D4D4;
+}
+
+.right_content .bloc_cadre p {
+	margin: 0;
+}
+
+.right_content .bloc_cadre a {
+	font-weight: bold;
+	clear: both;
+	float: right;
+	margin: 0 15px 0 0;
+}
+
+/* bloc agenda */
+#bloc_agenda #date_agenda {
+	width: 90px;
+	height: 77px;
+	float: left;
+	padding: 12px 0 0 0;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	background: url('http://static.gerbeaud.com/img/bg_date_agenda.jpg') 0 0
+		no-repeat;
+}
+
+#bloc_agenda #date_agenda span {
+	color: #648D18;
+	font-size: 30px;
+}
+
+#bloc_agenda .info_agenda {
+	width: 175px;
+	height: 39px;
+	float: left;
+	margin: 0 0 5px 0;
+	font-size: 12px;
+	background: url('http://static.gerbeaud.com/img/bg_infos_agenda.jpg') 0
+		0 no-repeat;
+}
+
+#bloc_agenda .info_agenda img {
+	float: left;
+	margin: 5px 0 0 5px;
+}
+
+#bloc_agenda .info_agenda p {
+	margin: 10px 0 0 50px;
+}
+
+/* blocs */
+.bloc_droite {
+	float: left;
+	padding: 6px 0;
+}
+
+.bloc_droite_int {
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	background: #FDFDFB;
+	float: left;
+	padding: 0 12px 8px;
+	width: 274px;
+	overflow: hidden;
+	height: 1%;
+}
+
+.bloc_droite_int h2 {
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.bloc_droite_int a {
+	font-weight: bold;
+}
+
+.bloc_droite_int p.author {
+	font-size: 10pt;
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-top: -3px;
+}
+
+.bloc_droite_int p.editor {
+	font-size: 8pt;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+
+.bloc_droite_int p.bottom {
+	clear: both;
+	font-size: 10pt;
+	margin-left: 15px;
+	margin-top: 8px;
+}
+
+/* facebook likebox */
+.right_content .fb-like-box {
+	margin: 10px 0 0 0;
+}
+
+/* bloc fiches */
+.right_content div.tabtitle {
+	font-size: 12pt;
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-top: 5px;
+	padding-top: 10px;
+}
+
+div.tabsheader ul {
+	bottom: -1px;
+	line-height: 1em;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 300px;
+}
+
+div.tabsheader ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+div.tabsheader ul a:active,div.tabsheader ul a.here:link,div.tabsheader ul a.here:visited
+	{
+	background: none repeat scroll 0 0 #FFF3B3;
+	border-bottom: 1px solid #FFF3B3;
+}
+
+div.tabsheader ul a {
+	background: #FFFDF3;
+	border-top: 1px solid #EDE099;
+	border-left: 1px solid #EDE099;
+	border-right: 1px solid #EDE099;
+	color: #444444;
+	display: block;
+	font-size: 12px;
+	margin: 1px 2px 0 0;
+	padding: 0.25em 1em;
+	text-decoration: none;
+}
+
+div.tabsmain {
+	background: #FFF3B3;
+	border: 1px solid #EDE099;
+	clear: both;
+	width: 298px;
+}
+
+div.tabscontents {
+	background: #FFF3B3;
+	margin-top: 1em;
+	min-height: 200px;
+	width: 298px;
+}
+
+/* bloc sélection articles */
+div.selection_articles {
+	background: #F8F8F8;
+	border-bottom: 2px solid #666666;
+	border-top: 2px solid #666666;
+	clear: both;
+	margin: 5px 0;
+	padding-bottom: 5px;
+}
+
+div.selection_articles h2 {
+	font-size: 12px;
+	margin: 0 0 0 5px;
+	padding-top: 5px;
+}
+
+div.selection_articles h3 {
+	color: #666666;
+	font-size: 12px;
+	margin-bottom: 3px;
+	margin-left: 5px;
+	text-transform: uppercase;
+}
+
+div.selection_articles ul {
+	margin-left: 0;
+	margin-top: 3px;
+	padding-left: 5px;
+}
+
+/* bloc thème */
+div.group_block {
+	background: #E7E7E7;
+	border: 1px solid #d1d1d1;
+	overflow: hidden;
+	height: 1%;
+}
+
+div.titre_group_block {
+	height: 96px;
+}
+
+div.titre_group_block img {
+	position: absolute;
+	z-index: 0;
+}
+
+div.group_block h3 {
+	width: 288px;
+	font-size: 16px;
+	margin: 70px 6px 0 6px;
+	position: absolute;
+	z-index: 10;
+	color: #fff;
+}
+
+div.group_block .opacite {
+	height: 33px;
+	width: 300px;
+	position: absolute;
+	z-index: 5;
+	margin: 63px 0 0 0;
+	background: #000;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	-ms-filter: "alpha(opacity=50)"; /* IE 8 */
+	filter: alpha(opacity = 50); /* IE < 8 */
+}
+
+div.group_block .link_plus {
+	float: right;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 0 0 15px;
+	margin: 0 12px 5px 0;
+	background: url('http://static.gerbeaud.com/img/puce.png') center left
+		no-repeat;
+}
+
+div.group_block .link_plus:hover {
+	color: #000;
+}
+
+/*------------------------------------------*/
+/*---------- FOOTER ---------*/
+.foot_section {
+	clear: both;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 10px;
+	color: #606060;
+	background: url('http://static.gerbeaud.com/img/bg_footer.jpg') repeat-x;
+}
+
+.foot_section p {
+	margin: 0;
+}
+
+.foot_section a {
+	color: #000;
+}
+
+/********************* REINTEGRATION ANCIENS STYLES *****************************/
+.center_content  .article p.auteur {
+	clear: both;
+	text-align: right;
+	margin: 15px 30px 0 0;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+/* nouveautés qr*/
+.qr_titre {
+	background: url(http://static.gerbeaud.com/img/bg_titre_qr.jpg) repeat-x;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	width: 537px;
+	float: left;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold
+}
+
+.qr_sous_titre {
+	background: #ecebeb;;
+	margin-left: 10px;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	width: 537px;
+	float: left;
+	font-size: 11px;
+	color: #1e1e1e;
+}
+
+.qr_contain {
+	margin-left: 10px;
+	border-top: #e0e0e0 dashed 0px;
+	border-right: #e0e0e0 dashed 1px;
+	border-bottom: #e0e0e0 dashed 1px;
+	border-left: #e0e0e0 dashed 1px;
+	float: left;
+	padding: 5px;
+	width: 535px
+}
+
+.qr_form_1 {
+	width: 75px;
+	float: left;
+	font-size: 11px;
+	padding-bottom: 2px
+}
+
+.qr_form_1_1 {
+	width: 460px;
+	float: left;
+	padding-bottom: 2px
+}
+
+.form_qr_1_1 a {
+	font-size: 11px
+}
+
+.qr_form_2 {
+	width: 150px;
+	float: left;
+	font-size: 11px;
+	padding-bottom: 2px
+}
+
+.qr_form_2_2 {
+	width: 385px;
+	float: left;
+	padding-bottom: 2px
+}
+
+.qr_form_2_2 a {
+	font-size: 11px
+}
+
+.qr_form_3 {
+	width: 200px;
+	float: left;
+	font-size: 11px;
+	padding-bottom: 2px
+}
+
+.qr_form_3_3 {
+	width: 335px;
+	float: left;
+	padding-bottom: 2px
+}
+
+.qr_form_4 {
+	width: 250px;
+	float: left;
+	font-size: 11px;
+	padding-bottom: 2px
+}
+
+.qr_form_4_4 {
+	width: 285px;
+	float: left;
+	padding-bottom: 2px
+}
+
+.qr_form_seul {
+	width: 535px;
+	float: left;
+	padding-bottom: 2px;
+	font-size: 11px;
+}
+
+.qr_note {
+	border-top: #e0e0e0 dashed 1px;
+	padding-top: 5px;
+	margin-top: 40px;
+	font-size: 10px;
+	font-family: tahoma;
+	color: #666666;
+	float: left;
+	width: 535px;
+}
+
+.qr_gros_titre {
+	color: #000;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	font-weight: bold
+}
+
+.qr_sous_titre2 {
+	color: #333;
+	font-size: 14px;
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+}
+
+.qr_recap_nb {
+	color: #7ead27;
+	font-size: 11px;
+	padding-top: 2px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.qr_titre_q {
+	background: url(http://static.gerbeaud.com/img/bg_question_off_qr.jpg)
+		no-repeat;
+	color: #000;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-bottom: -1px;
+	margin-top: 3px;
+	cursor: pointer
+}
+
+.qr_nb_r {
+	font-size: 10px;
+	color: #7ead27;
+}
+
+.qr_titre_q_on {
+	background: url(http://static.gerbeaud.com/img/bg_question_on_qr.jpg)
+		no-repeat;
+	color: #000;
+	font-size: 12px;
+	padding-top: 4px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	margin-left: 0px;
+	margin-bottom: -1px;
+	margin-top: 1px;
+	cursor: pointer
+}
+
+.qr_detail_q {
+	color: #000;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-left: 0px;
+	padding-bottom: 5px;
+	margin-left: 25px;
+}
+
+.qr_auteur_q {
+	color: #737373;
+	font-size: 10px;
+	padding-left: 0px;
+	padding-bottom: 8px;
+	margin-left: 25px;
+}
+
+.qr_bt_q {
+	color: #737373;
+	font-size: 10px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	margin-left: 25px;
+}
+
+.qr_detail_r {
+	background: #f2f2f2;
+	color: #000;
+	font-size: 12px;
+	padding-top: 7px;
+	padding-left: 25px;
+	padding-bottom: 0px;
+	margin-left: 0px;
+}
+
+.qr_auteur_r {
+	background: #f2f2f2;
+	color: #737373;
+	font-size: 10px;
+	padding-left: 25px;
+	padding-bottom: 8px;
+	margin-left: 0px;
+}
+
+.qr_bt_r {
+	background: #f2f2f2;
+	color: #466907;
+	font-size: 11px;
+	padding-left: 25px;
+	padding-bottom: 1px;
+	margin-left: 0px;
+	border-bottom: #FFFFFF solid 2px
+}
+
+.qr_bt_autre_q {
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-bottom: -1px;
+	margin-top: 1px
+}
+
+.qr_encadre {
+	border: #cbcbcb 1px solid;
+	padding: 2px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-bottom: -1px;
+	margin-top: 1px;
+}
+
+/* rajout home FAQ - XG */
+.qr_titre_bis {
+	background: url(http://static.gerbeaud.com/img/bg_question_off_qr.jpg)
+		no-repeat;
+	color: #000;
+	font-size: 12px;
+	padding-top: 4px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	font-weight: bold;
+	margin-left: 0px;
+	margin-bottom: -1px;
+	margin-top: 1px;
+}
+
+.qr_encadre h4 {
+	margin: 0;
+	padding: 0;
+}
+
+.qr_encadre p {
+	color: #000;
+	font-size: 12px;
+	padding: 5px 5px 5px 0;
+	margin: 0 0 0 25px;
+	font-weight: bold;
+}
+
+.qr_encadre ul {
+	margin: 0;
+	list-style-image: url(http://static.gerbeaud.com/img/puce_verte.gif)
+}
+
+.qr_encadre ul li {
+	font-size: 12px;
+	padding: 0 0 2px 0;
+	margin-left: 25px;
+}
+
+/***** divers *****/
+.clear {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.clear2 {
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+/*Outermost DIV for thumbnail viewer*/
+#thumbBox {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: auto;
+	padding: 5px;
+	padding-bottom: 0;
+	background: #ccc;
+	visibility: hidden;
+	z-index: 10;
+	cursor: pointer;
+}
+
+/*Footer DIV of thumbbox that contains "close" link */
+#thumbBox .footerbar {
+	font: bold 10px Arial;
+	letter-spacing: 0px;
+	line-height: 1.1em;
+	color: #666;
+	padding: 5px 0;
+	text-align: right;
+}
+
+/*DIV within thumbbox that holds the enlarged image */
+#thumbBox #thumbImage {
+	background-color: white;
+}
+
+/*DIV for showing "loading" status while thumbbox is being generated*/
+#thumbLoading {
+	position: absolute;
+	visibility: hidden;
+	border: 1px solid black;
+	background-color: #EFEFEF;
+	padding: 5px;
+	z-index: 5;
+}
+
+/******/
+div.book {
+	margin-top: 10px;
+	border: 1px solid #333;
+	padding: 5px;
+	background: #F0FFE8;
+	width: 290px;
+}
+
+.book h3 {
+	margin-left: 5px;
+	margin-top: 5px;
+	text-transform: uppercase;
+	font-size: 10pt;
+}
+
+.book h2 {
+	margin-left: 5px;
+	margin-top: 5px;
+	font-size: 10pt;
+}
+
+.book p {
+	font-size: 14px;
+	padding: 0px;
+}
+
+.book p {
+	font-size: 12px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.book p.author {
+	font-weight: bold;
+}
+
+.book p.bottom {
+	clear: both;
+	padding-top: 5px;
+	margin-left: 70px;
+}
+
+.book img {
+	padding-right: 5px;
+	margin: auto;
+	clear: both;
+}
+
+/* partenariat cuisine */
+.partners_right {
+	clear: both;
+	width: 300px;
+	background:
+		url("http://static.gerbeaud.com/images/bg_partners_right.gif")
+		no-repeat;
+	padding-top: 15px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 10px 0 10px 0;
+}
+
+.partner_right a {
+	color: blue;
+}
+
+.right_content div.partner_right p {
+	margin: 0 3px 0 7px;
+	font-size: 10px;
+}
+
+div.shopping {
+	clear: both;
+	width: 538px;
+	background-color: #ECE1CB; /* dbceb3*/
+	border-top: #333333 dashed 1px;
+	border-bottom: #333333 dashed 1px;
+	font: 11px verdana, sans-serif;
+	margin: 10px;
+	padding-top: 5px;
+}
+
+div.shopping ul {
+	padding-left: 5px;
+	margin-left: 20px;
+}
+
+.center_content div.shopping ul li {
+	list-style-type: none;
+	list-style-image: none;
+	margin-bottom: 2px;
+	font-size: 11px;
+}
+
+.center_content div.shopping ul li a {
+	color: black;
+	text-decoration: underline;
+}
+
+/* PETIT BLOC*/
+.center_content .petit_bloc {
+	font-family: arial;
+	font-size: 12px;
+	color: #000000;
+	margin: 10px;
+	font-weight: normal;
+	text-align: justify;
+	width: 538px;
+	background: #EEEEEE;
+	clear: both;
+	border-top: solid 1px #999999;
+	border-bottom: solid 1px #999999;
+}
+
+.center_content .petit_bloc p {
+	font-family: arial;
+	font-size: 12px;
+	color: #000000;
+	padding: 2px 2px 2px 10px;
+	font-weight: normal;
+	text-align: justify;
+	width: 500px;
+}
+
+.center_content .petit_bloc li {
+	padding: 0 0 5px 0px;
+	width: 480px;
+}
+
+/* SELECTEUR A VIGNETTES */
+div.category a img,div.category *:link img,div.category *:visited img {
+	border: 0pt none;
+}
+
+div.selector {
+	color: #FFFFFF;
+	font-family: arial, helvetica, sans-serif;
+	width: 480px;
+	padding: 8px 5px;
+	margin-left: 35px;
+}
+
+div.selector div.category {
+	display: block;
+	float: left;
+	font-size: 12px;
+	height: 100px;
+	min-height: 100px;
+	padding: 5px;
+	position: relative;
+	text-align: center;
+	vertical-align: bottom;
+	width: 102px;
+}
+
+div.selector div.category a {
+	color: #000000;
+	text-decoration: none;
+}
+
+div.inner_list {
+	width: 270px;
+	float: left;
+}
+
+div.inner_list h2 {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+div.inner_list ul {
+	margin-top: 0px;
+}
+
+table.tabfl {
+	font-size: 12px;
+	margin: auto;
+	border-collapse: collapse;
+	border-width: 1px;
+}
+
+table.tabfl td {
+	font-size: 12px;
+	margin: auto;
+	border-collapse: collapse;
+	border-width: 1px;
+	border-style: solid;
+	width: 50%;
+	background-color: #FED00A;
+}
+
+div.livre {
+	clear: both;
+	display: block;
+	width: 550px;
+	margin-bottom: 20px;
+}
+
+.bg_section div.livre p img.couverture {
+	float: left;
+	margin: 0px 10px 5px 0px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #555555;
+}
+
+div.pagination {
+	clear: both;
+	width: 540px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-top: #e0e0e0 dashed 1px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* bloc imge & legende */
+div.image {
+	margin: 5px 0px 5px 7px;
+	float: right
+}
+
+.center_content div.image p {
+	font-family: verdana, sans-serif;
+	font-size: 10px;
+	color: #666666;
+	padding: 0px;
+}
+
+/* pave contributeurs Q/A colonne droite */
+div.qr_top_contributor {
+	background: url(../images/laurier-fond.gif) no-repeat;
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+div.qr_top_contributor h3 {
+	font-size: 12pt;
+}
+
+/* bloc commentaire latéral droit */
+div.comment {
+	margin-top: 10px;
+	border: 1px solid #333;
+	clear: both;
+	background: #f8fbf1;
+	width: 298px;
+	padding-bottom: 10px;
+}
+
+.comment h4 {
+	margin-left: 5px;
+	margin-top: 5px;
+	text-transform: uppercase;
+}
+
+div.comment p {
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+div.comment ul li {
+	margin-left: -20px;
+	font-size: 12px;
+	background-image: url(/images/puce_verte.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	list-style-type: none;
+	padding-left: 8px;
+	padding-bottom: 4px;
+}
+
+/*** menu principal pages (bof...) *****/
+.article .big_menu h2 {
+	font-size: 16px;
+}
+
+.article .big_menu h3 {
+	font-size: 14px;
+}
+
+/***** séparation latérale droite std ************/
+div.sideGroup {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	font-size: 10pt;
+	margin-left: 0px;
+}
+
+div.sideGroup h3 {
+	margin-bottom: 5pt;
+	margin-top: 0px;
+}
+
+/* Blocs SECTION ACTU SOUS PARTIE */
+.container_bloc_sous_partie {
+	width: 560px;
+	padding: 0 0 10px 0
+}
+
+.bloc_sous_partie {
+	width: 240px;
+	float: left;
+	margin: 5px;
+	padding: 10px;
+	border: #e0e0e0 dashed 1px;
+}
+
+.bloc_sous_partie p {
+	font-size: 11px
+}
+
+.bloc_sous_partie h3 {
+	font-size: 11px;
+	padding: 5px 0px 5px 0px;
+	margin: -5px 0px 5px 0px;
+}
+
+.bloc_sous_partie h2 {
+	padding: 15px 0px 15px 0px;
+	margin: -15px -0px -15px 0px;
+}
+
+.bloc_sous_partie h2 a,.bloc_sous_partie h1 a:link {
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none
+}
+
+.bloc_sous_partie h2 a:hover {
+	text-decoration: underline
+}
+
+.bloc_sous_partie p a {
+	font-size: 11px;
+}
+
+/* blocs HP ? */
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+/* Hides from IE-mac */
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+/* End hide from IE-mac */
+
+/************* calendrier lunaire *****************/
+.calendrierv2 tr {
+	border-bottom: 1px solid;
+	border-color: #fff;
+}
+
+table.calendrierv2 {
+	width: 450px;
+	font-size: 11px;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #eaeee4;
+	border-collapse: collapse;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.cal-td1 {
+	background: #88ad4f;
+	border: 0px dashed #eaeee4;
+	padding: 5px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.cal-td1-week {
+	background: #567a1f;
+	border: 0px dashed #eaeee4;
+	padding: 5px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.cal-td1-defav {
+	background: #d81313;
+	border: 0px dashed #eaeee4;
+	padding: 5px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.cal-td1-span1 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.cal-td1-span2 {
+	font-size: 10px;
+}
+
+.cal-td2 {
+	background: #fff;
+	border-right: 1px dashed #eaeee4;
+	padding: 5px;
+	border-bottom: 1px solid #eaeee4;
+}
+
+.cal-td3 {
+	background: #fff;
+	border-right: 1px dashed #eaeee4;
+	padding: 5px;
+	border-bottom: 1px solid #eaeee4;
+}
+
+.cal-td4 {
+	background: #fff;
+	padding: 5px;
+	border-bottom: 1px solid #eaeee4;
+}
+
+/* séparation (deprecated) */
+.step {
+	clear: both;
+	width: 540px;
+	float: left;
+	font-family: arial;
+	font-size: 12px;
+	color: #000000;
+	margin: 7px;
+	padding: 1px;
+	font-weight: normal;
+	text-align: justify;
+}
+
+/* rubr. livres */
+.top_spirale {
+	background: url(../images/spirale_top.gif) no-repeat;
+	width: 293px;
+	height: 57px;
+	float: left;
+}
+
+.center_spirale_titre {
+	background: url(../images/spirale-bg.gif) repeat-y;
+	width: 293px;
+	height: 25px;
+	float: left;
+	text-align: left;
+	padding: 4px 0px 0px 25px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.center_spirale {
+	background: url(../images/spirale-bg.gif) repeat-y;
+	width: 265px;
+	float: left;
+	padding: 2px 15px 10px 15px;
+	font-family: Arial;
+	font-size: 11px;
+	color: #666666;
+	text-align: justify
+}
+
+.center_spirale img {
+	padding: 0px 2px 3px 8px;
+	float: right
+}
+
+.bottom_spirale {
+	float: left;
+	width: 293px;
+	height: 34px;
+	background: url(../images/spirale_bottom.gif) no-repeat;
+}
+
+/************* Modifications 08/02/2012 ******************/
+.center_content .article  .bloc h2 {
+	font-size: 14px;
+	padding: 0 0 0 20px;
+	margin: 10px 0;
+	background: url('http://static.gerbeaud.com/img/feuille_titre.gif')
+		no-repeat;
+	font-weight: bold;
+}
+
+.center_content .article .bloc h3 {
+	font-size: 11px;
+	margin: 0;
+	font-weight: bold;
+	display: block;
+}

@@ -1,0 +1,44 @@
+document.write('<scr'+'ipt type="text/javascript" src="http://www.jardipedia.com/compiler/js/top/pub300.js"></scr'+'ipt>');if (typeof adDelivered != 'undefined') {adDelivered++;} else {adDelivered = 1;} 
+
+{w=function(s){document.writeln('<scr'+'ipt src="//ads.adverline.com/tools/'+s+'.js"></scr'+'ipt>');};w("cedexis");w("nugg");}
+
+/*(function () {
+  //if (Math.floor(Math.random() * 10) % 2 != 0 || window.lbdclav2358loaded)
+  if (window.lbdclav2358loaded)
+    return;
+
+  window.lbdclav2358 = {  
+    // Do not modify anything above this.
+    'avck':     'B63B42A8BE2CDEF38583D86E741A6962',
+    'r':        encodeURIComponent(document.referrer),
+    'support':  'banner',
+    'uinfo':    0
+    // Do not modify anything below this
+  };
+
+  var avsc = document.createElement('script');
+  avsc.async = true;
+  avsc.src = '//rs.mediapostcommunication.net/tag.js'; 
+
+  var sc0 = document.getElementsByTagName('script')[0];
+  sc0.parentNode.insertBefore(avsc, sc0);
+
+  window.lbdclav2358loaded = true;
+})();*/
+
+(function (w, d) {
+  if (typeof w.dmbgclzvi7of !== "undefined") {
+    return;
+  }
+
+  w.dmbgclzvi7of = {
+    "data": "avck=B63B42A8BE2CDEF38583D86E741A6962&r=" + encodeURIComponent(d.referrer) + "&support=banner&uinfo=0"
+  };
+
+  var s = d.createElement("script");
+  s.async = 1;
+  s.src = "//mt.mediapostcommunication.net/20?";
+
+  var r = d.getElementsByTagName("script")[0];
+  r.parentNode.insertBefore(s, r);
+})(window, document);

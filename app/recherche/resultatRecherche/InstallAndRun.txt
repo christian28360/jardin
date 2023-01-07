@@ -1,0 +1,153 @@
+
+ //////////////////////////////////////////////
+a Blork engine - Site officiel et minimaliste
+Accueil // Documentation // Forum
+//////////////////////////////////////////////
+
+
+
+/////////// Documentation ///////////
+// Dernière mise à jour le 10/02/08 par zulios
+//
+// C'est quoi "a Blork engine" ?
+// Principales fonctions / Nouveautés
+// Installation / Mise à jour
+// Comment insérer un formulaire de recherche dans mes pages ?
+// Que faire en cas de problème / bug ?
+//
+//////////////////////////////////////////////
+
+
+//////////////////////////////////////////////
+C'est quoi "a Blork engine" ?
+// Retour au sommaire
+
+// a Blork engine est un script écrit en PHP qui permet d'ajouter un moteur de recherche à votre site. Il n'utilise ni indexation, ni base de données. Vous n'aurez donc rien à faire, le script fonctionne tout seul une fois installé. Cela signifie également que tous vos fichiers seront scannés à chaque recherche, ce qui est plus lent et consomme beaucoup de ressources; par conséquent le script est plutôt recommandé pour des sites de petite ou moyenne taille. Pour de gros sites, il est indispensable d'utiliser un script avec indexation des fichiers afin de limiter la consommation des ressources du serveur.
+
+// a Blork engine est distibué sous license GNU GPL. Une copie de cette license se trouve dans l'archive du script. Vous pouvez consulter les termes officiels de cette license (en anglais) en cliquant ici. Une traduction non officielle en français de cette license est disponible sur le site de GNU (cliquez ici).
+
+// Retour au sommaire
+//////////////////////////////////////////////
+
+//////////////////////////////////////////////
+Principales fonctions / nouveautés
+// Retour au sommaire
+
+// Recherche sur une expression exacte
+      
+// Recherche sur plusieurs mots, jusqu'à 9 mots maximum (nouveauté v0.3)
+      
+// Recherche de fichiers images d'après leur nom
+      
+// Scan des sous-dossiers (nouveauté v0.3 : plus de limite sur le nombre de niveaux de sous-dossier scannés)
+      
+// Possibilité d'exclure des fichiers de la recherche
+      
+// Possibilité d'exclure des mots de la recherche (nouveauté v0.3)
+      
+// Classement des résultats par pertinence (nouveauté v0.3 : pertinence plus précise)
+      
+// Support des pseudo-frames
+      
+// Possibilité de personnaliser le script à l'aide de deux fichiers placés avant et après le corps du script
+      
+// Debug mode (nouveauté v0.3)
+      
+// Utilisation des sessions pour un affichage plus rapide en cas d'actualisation de la page ou de passage à la page de résultats précédents / suivants (nouveauté v0.3)
+
+// Retour au sommaire
+//////////////////////////////////////////////
+
+
+//////////////////////////////////////////////
+Installation / Mise à jour
+// Retour au sommaire
+
+// ATTENTION : ce script nécessite PHP 4.3.3 ou supérieur. Si vous n'êtes pas sûr de la version de PHP installée sur votre serveur, uploadez le fichier phpinfo.php contenu dans cette archive et rendez vous à son adresse. Vous verrez alors la version de PHP installée et les différentes options de configuration de PHP sur votre serveur.
+
+// Installation
+
+1- Décompressez le contenu de l'archive que vous avez téléchargé (si vous lisez ceci, c'est probablement déjà fait).
+      
+2- Remplissez le fichier de configuration du script (blork_engine_config_03.php)
+      
+3- Mettez sur votre espace FTP le contenu du dossier "script". Vous pouvez le placer à l'endroit que vous souhaitez tant que le fichier est accessible par vos visiteurs.
+      
+4- Si votre site est hébergé chez free.fr, créez un dossier sessions (attention au pluriel !) à la racine du ftp.
+      
+5- Testez le script, si tout est bien configuré ça marche !
+      
+6- Remplissez les fichiers blork_engine_haut.html et blork_engine_bas.html avec le code html ou php que vous souhaitez voir apparaître en haut et en bas du moteur de recherche.
+
+
+// Mise à jour
+
+// Depuis n'importe quelle version précédente (même la dernière en date, version 0.23b) :
+
+1- Faites une copie de sauvegarde des fichiers actuels du script,
+      
+2- Remplacez le fichier de configuration (blork_engine_config_03.php), après l'avoir configuré (de nouvelles options sont apparues, le fichier contient également de nouvelles valeurs sans lesquelles le script ne pourra pas fonctionner correctement).
+      
+3- Ajoutez le fichier blork_engine_errors_03.php avec le reste des fichiers du script.
+      
+4- Si votre site est hébergé chez free.fr, créez un dossier sessions (attention au pluriel !) à la racine du ftp.
+      
+5- Remplacez l'ancien fichier engine.php par le nouveau.
+      
+6- Les fichiers blork_engine_haut.html et blork_engine_bas.html peuvent être conservés.
+      
+7- Testez le script, si tout est bien configuré ça marche !
+
+NOTA : Si vous aviez placé un formulaire de recherche dans vos pages, il faut remplacer le nom du champ "action" par "cherche". Voir à ce sujet comment insérer un formulaire de recherche.
+
+// Retour au sommaire
+//////////////////////////////////////////////
+
+
+//////////////////////////////////////////////
+Comment insérer un formulaire de recherche dans mes pages ?
+// Retour au sommaire
+
+Fastoche ! Insérez le code suivant dans vos pages :
+
+Effectuer une recherche : <br />
+<form method="get" action="engine.php">
+<input type="hidden" name="cherche" value="go" />
+<input type="text" name="blork" />
+<input type="submit" value="OK" />
+</form>
+
+Si le fichier engine.php est situé dans un autre dossier, veillez à modifier action="engine.php" pour y rajouter l'emplacement du fichier (par exemple action="recherche/engine.php").
+
+// Retour au sommaire
+//////////////////////////////////////////////
+
+//////////////////////////////////////////////
+Que faire en cas de problème / bug ?
+// Retour au sommaire
+
+Si vous êtes hébergé chez free.fr et que vous obtenez les messages d'erreurs suivants :
+
+Warning: session_start(): open(..., O_RDWR) failed: No such file or directory (2) in ... on line ...
+Warning: session_start(): Cannot send session cookie - headers already sent by (output started at ...) in ... on line ...
+Warning: session_start(): Cannot send session cache limiter - headers already sent (output started at ...) in ... on line ...
+etc...
+
+Retournez au paragraphe sur l'installation, il y est expliqué comment installer le script chez free.fr, merci.
+
+Pour d'autres problèmes, commencez par vérifier les points suivants :
+
+Relisez bien les messages d'erreur qui apparaissent
+    La plupart du temps, les messages d'erreur donnent de bonnes indications sur la source du problème; assurez vous que le problème ne soit pas dû au fichier de configuration qui serait mal rempli. 
+      
+Avez vous rempli les fichiers blork_engine_haut.html et blork_engine_bas.html ?
+    Si oui, activez le debug mode tout en bas du fichier de config, sous la ligne "activation du debug mode", mettez oui au lieu de non. Ces deux fichiers ne seront pas inclus; vérifiez que le problème existe toujours. 
+      
+Avez vous tenté de modifier le script ?
+    Si oui, vérifiez que le script original comporte bien le même problème. 
+      
+Vous avez vérifié tous ces points, et ça ne fonctionne toujours pas comme il faut ?
+    Alors le forum est à votre disposition pour me le signaler. 
+
+// Retour au sommaire
+//////////////////////////////////////////////

@@ -1,0 +1,94 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>phpMyAdmin</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="phpmyadmin.css.php?token=9e45ad7c1dd43e8014cf8eff1078fbb2&amp;js_frame=right&amp;nocache=3620898363" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+    <script type="text/javascript">
+    // <![CDATA[
+    // Updates the title of the frameset if possible (ns4 does not allow this)
+    if (typeof(parent.document) != 'undefined' && typeof(parent.document) != 'unknown'
+        && typeof(parent.document.title) == 'string') {
+        parent.document.title = 'sql17.000webhost.com / localhost / a6932404_stats / visiteurs_du_site | phpMyAdmin 2.11.4';
+    }
+    
+    // ]]>
+    </script>
+        
+    <script src="./js/tooltip.js" type="text/javascript"></script>
+    <meta name="OBGZip" content="true" />
+        <!--[if IE 6]>
+    <style type="text/css">
+    /* <![CDATA[ */
+    html {
+        overflow-y: scroll;
+    }
+    /* ]]> */
+    </style>
+    <![endif]-->
+</head>
+
+<body>
+<div id="TooltipContainer" onmouseover="holdTooltip();" onmouseout="swapTooltip('default');"></div>
+    <div id="serverinfo">
+<a href="main.php?token=9e45ad7c1dd43e8014cf8eff1078fbb2" class="item">        <img class="icon" src="./themes/arctic_ocean/img/s_host.png" width="16" height="16" alt="" /> 
+Server: localhost</a>
+        <span class="separator"><img class="icon" src="./themes/arctic_ocean/img/item_ltr.png" width="5" height="9" alt="-" /></span>
+<a href="db_structure.php?db=a6932404_stats&amp;token=9e45ad7c1dd43e8014cf8eff1078fbb2" class="item">        <img class="icon" src="./themes/arctic_ocean/img/s_db.png" width="16" height="16" alt="" /> 
+Database: a6932404_stats</a>
+        <span class="separator"><img class="icon" src="./themes/arctic_ocean/img/item_ltr.png" width="5" height="9" alt="-" /></span>
+<a href="tbl_structure.php?db=a6932404_stats&amp;table=visiteurs_du_site&amp;token=9e45ad7c1dd43e8014cf8eff1078fbb2" class="item">        <img class="icon" src="./themes/arctic_ocean/img/s_tbl.png" width="16" height="16" alt="" /> 
+Table: visiteurs_du_site</a>
+</div>
+<!-- PMA-SQL-ERROR -->
+    <div class="error"><h1>Error</h1>
+    <p><strong>SQL query:</strong>
+<a href="http://dev.mysql.com/doc/mysql/en/select.html" target="mysql_doc"><img class="icon" src="./themes/arctic_ocean/img/b_help.png" width="11" height="11" alt="Documentation" title="Documentation" /></a><a href="tbl_sql.php?db=a6932404_stats&amp;table=visiteurs_du_site&amp;token=9e45ad7c1dd43e8014cf8eff1078fbb2&amp;sql_query=SELECT+%60ip_adress%60+%2C+count+%28+%2A+%29+as+%22Nbre%22++FROM+visiteurs_du_site++where++ip_adress+in+%28+%2764.241.243.65%27+%2C+%2764.241.243.65%27+%2C+%27209.249.67.1%27+%2C++%2764.241.242.177%27+%2C+%2762.212.117.198%27+%2C+%2765.214.38.10%27+%2C++%27212.127.141.180%27+%2C+%27216.243.113.1%27+%2C+%27217.205.60.225%27+%2C++%2762.119.21.157%27+%2C+%27193.218.115.6%27+%2C+%27210.59.144.149%27+%2C++%2766.237.60.22%27+%29++or+ip_adress+like+%2766.249.%25%27++or+ip_adress+like+%27207.68.146.%25%27++or+ip_adress+like+%2765.54.188.%25%27++or+ip_adress+like+%2766.196.%25%27++or+ip_adress+like+%2768.142.%25%27++or+ip_adress+like+%27195.101.94.%25%27++or+ip_adress+like+%2766.77.73.%25%27++or+ip_adress+like+%2765.214.36.%25%27++or+ip_adress+like+%27213.73.184.%25%27++or+ip_adress+like+%27218.145.25.%25%27++GROUP+BY+%60ip_adress%60++ORDER+BY+%22Nbre%22+desc+++LIMIT+21&amp;show_query=1"><img class="icon" src=" ./themes/arctic_ocean/img/b_edit.png" width="16" height="16" alt="Edit" /></a>    </p>
+    <p>
+        <span class="syntax"><span class="syntax_alpha syntax_alpha_reservedWord">SELECT</span>  <span class="syntax_quote syntax_quote_backtick">`ip_adress`</span> <span class="syntax_punct syntax_punct_listsep">,</span> <span class="syntax_alpha syntax_alpha_functionName">count</span><span class="syntax_punct syntax_punct_bracket_open_round">(</span>  <span class="syntax_punct">*</span>  <span class="syntax_punct syntax_punct_bracket_close_round">)</span>  <span class="syntax_alpha syntax_alpha_reservedWord">AS</span>  <span class="syntax_quote syntax_quote_double">&quot;Nbre&quot;</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">FROM</span> <span class="syntax_alpha syntax_alpha_identifier">visiteurs_du_site</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">WHERE</span> <span class="syntax_alpha syntax_alpha_identifier">ip_adress</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">IN</span> <span class="syntax_punct syntax_punct_bracket_open_round">(</span><div class="syntax_indent1"> <span class="syntax_quote syntax_quote_single">'64.241.243.65'</span><span class="syntax_punct syntax_punct_listsep">,</span>  <span class="syntax_quote syntax_quote_single">'64.241.243.65'</span><span class="syntax_punct syntax_punct_listsep">,</span>  <span class="syntax_quote syntax_quote_single">'209.249.67.1'</span><span class="syntax_punct syntax_punct_listsep">,</span>  <span class="syntax_quote syntax_quote_single">'64.241.242.177'</span><span class="syntax_punct syntax_punct_listsep">,</span>  <span class="syntax_quote syntax_quote_single">'62.212.117.198'</span><span class="syntax_punct syntax_punct_listsep">,</span>  <span class="syntax_quote syntax_quote_single">'65.214.38.10'</span><span class="syntax_punct syntax_punct_listsep">,</span>  <span class="syntax_quote syntax_quote_single">'212.127.141.180'</span><span class="syntax_punct syntax_punct_listsep">,</span>  <span class="syntax_quote syntax_quote_single">'216.243.113.1'</span><span class="syntax_punct syntax_punct_listsep">,</span>  <span class="syntax_quote syntax_quote_single">'217.205.60.225'</span><span class="syntax_punct syntax_punct_listsep">,</span>  <span class="syntax_quote syntax_quote_single">'62.119.21.157'</span><span class="syntax_punct syntax_punct_listsep">,</span>  <span class="syntax_quote syntax_quote_single">'193.218.115.6'</span><span class="syntax_punct syntax_punct_listsep">,</span>  <span class="syntax_quote syntax_quote_single">'210.59.144.149'</span><span class="syntax_punct syntax_punct_listsep">,</span>  <span class="syntax_quote syntax_quote_single">'66.237.60.22'</span></div><span class="syntax_punct syntax_punct_bracket_close_round">)</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">OR</span> <span class="syntax_alpha syntax_alpha_identifier">ip_adress</span> <span class="syntax_alpha syntax_alpha_reservedWord">LIKE</span>  <span class="syntax_quote syntax_quote_single">'66.249.%'</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">OR</span> <span class="syntax_alpha syntax_alpha_identifier">ip_adress</span> <span class="syntax_alpha syntax_alpha_reservedWord">LIKE</span>  <span class="syntax_quote syntax_quote_single">'207.68.146.%'</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">OR</span> <span class="syntax_alpha syntax_alpha_identifier">ip_adress</span> <span class="syntax_alpha syntax_alpha_reservedWord">LIKE</span>  <span class="syntax_quote syntax_quote_single">'65.54.188.%'</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">OR</span> <span class="syntax_alpha syntax_alpha_identifier">ip_adress</span> <span class="syntax_alpha syntax_alpha_reservedWord">LIKE</span>  <span class="syntax_quote syntax_quote_single">'66.196.%'</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">OR</span> <span class="syntax_alpha syntax_alpha_identifier">ip_adress</span> <span class="syntax_alpha syntax_alpha_reservedWord">LIKE</span>  <span class="syntax_quote syntax_quote_single">'68.142.%'</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">OR</span> <span class="syntax_alpha syntax_alpha_identifier">ip_adress</span> <span class="syntax_alpha syntax_alpha_reservedWord">LIKE</span>  <span class="syntax_quote syntax_quote_single">'195.101.94.%'</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">OR</span> <span class="syntax_alpha syntax_alpha_identifier">ip_adress</span> <span class="syntax_alpha syntax_alpha_reservedWord">LIKE</span>  <span class="syntax_quote syntax_quote_single">'66.77.73.%'</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">OR</span> <span class="syntax_alpha syntax_alpha_identifier">ip_adress</span> <span class="syntax_alpha syntax_alpha_reservedWord">LIKE</span>  <span class="syntax_quote syntax_quote_single">'65.214.36.%'</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">OR</span> <span class="syntax_alpha syntax_alpha_identifier">ip_adress</span> <span class="syntax_alpha syntax_alpha_reservedWord">LIKE</span>  <span class="syntax_quote syntax_quote_single">'213.73.184.%'</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">OR</span> <span class="syntax_alpha syntax_alpha_identifier">ip_adress</span> <span class="syntax_alpha syntax_alpha_reservedWord">LIKE</span>  <span class="syntax_quote syntax_quote_single">'218.145.25.%'</span><br /><span class="syntax_alpha syntax_alpha_reservedWord">GROUP</span>  <span class="syntax_alpha syntax_alpha_reservedWord">BY</span>  <span class="syntax_quote syntax_quote_backtick">`ip_adress`</span> <br /><span class="syntax_alpha syntax_alpha_reservedWord">ORDER</span>  <span class="syntax_alpha syntax_alpha_reservedWord">BY</span>  <span class="syntax_quote syntax_quote_double">&quot;Nbre&quot;</span> <span class="syntax_alpha syntax_alpha_reservedWord">DESC</span> <br /><span class="syntax_alpha syntax_alpha_reservedWord">LIMIT</span> <span class="syntax_digit syntax_digit_integer">21</span> </span>
+    </p>
+<p>
+    <strong>MySQL said: </strong><a href="http://dev.mysql.com/doc/mysql/en/error-messages-server.html" target="mysql_doc"><img class="icon" src="./themes/arctic_ocean/img/b_help.png" width="11" height="11" alt="Documentation" title="Documentation" /></a>
+</p>
+<code>
+#1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* ) as &quot;Nbre&quot;&nbsp;&nbsp;FROM visiteurs_du_site&nbsp;&nbsp;where&nbsp;&nbsp;ip_adress in ( '64.241.243.65' , '' at line 1
+</code><br />
+</div><fieldset class="tblFooters">    </fieldset>
+
+<script type="text/javascript">
+//<![CDATA[
+// updates current settings
+if (window.parent.setAll) {
+    window.parent.setAll('en-utf-8', 'utf8_unicode_ci', '1', 'a6932404_stats', 'visiteurs_du_site');
+}
+    // set current db, table and sql query in the querywindow
+if (window.parent.reload_querywindow) {
+    window.parent.reload_querywindow(
+        'a6932404_stats',
+        'visiteurs_du_site',
+        '');
+}
+    
+if (window.parent.frame_content) {
+    // reset content frame name, as querywindow needs to set a unique name
+    // before submitting form data, and navigation frame needs the original name
+    if (typeof(window.parent.frame_content.name) != 'undefined'
+     && window.parent.frame_content.name != 'frame_content') {
+        window.parent.frame_content.name = 'frame_content';
+    }
+    if (typeof(window.parent.frame_content.id) != 'undefined'
+     && window.parent.frame_content.id != 'frame_content') {
+        window.parent.frame_content.id = 'frame_content';
+    }
+    //window.parent.frame_content.setAttribute('name', 'frame_content');
+    //window.parent.frame_content.setAttribute('id', 'frame_content');
+}
+//]]>
+</script>
+</body>
+</html>

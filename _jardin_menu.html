@@ -1,0 +1,706 @@
+<td id="menu" valign="top">
+    <div class="titre_menu"
+         onmouseover="javascript:actualite('info_menu');"
+         onclick="javascript:cache_smenu();">
+        <b>Accès rapide</b>
+    </div> <!--  ce bloc s'affichera au passage de la souris du bloc au-dessus  -->
+    <div id="info_menu" style="position: absolute; visibility: hidden;"
+         class="petitblocG"></div>
+    <ul>
+
+        <?PHP /*
+        ************************************
+        *  Sous-menu Accueil               *
+        ***********************************/
+        ?>
+        <li title="Clic pour ouvrir le présent menu" class="titre_smenu"
+            onclick="javascript:montre('smenu0');"><a
+                href='?page=accueil.jard'>Accueil</a>
+            <div class="smenu" id="smenu0">
+                <ul>
+                    <li><a href='?page=jardin_sauvage'>Approche philosophique</a></li>
+                </ul>
+            </div></li>
+
+        <?PHP /*
+        ************************************
+        *  Sous-menu Index général         *
+        ***********************************/
+        ?>
+        <li title="Clic pour ouvrir le présent menu" class="titre_smenu"
+            onclick="javascript:montre('smenu1');"><a
+                title="Clic pour ouvrir l'index général" href='?page=index.jard'>
+                Index général</a>
+            <div class="smenu" id="smenu1">
+                <ul>
+                    <li><a href="?page=biologique/mauvaises_herbes">Les
+                            "mauvaises" herbes</a></li>
+                    <li><a href="http://fr.wikipedia.org/wiki/Liste_de_plantes"
+                           target="_blank" title="Vous allez être redirigés vers Wikipédia">Toutes
+                            les plantes</a></li>
+                </ul>
+            </div></li>
+
+        <?PHP /*
+        ************************************
+        *  Sous-menu Jardinage biologique  *
+        ***********************************/
+        ?>
+        <li title="Clic pour ouvrir le présent menu" class="titre_smenu"
+            onclick="javascript:montre('smenu2');"><a
+                title="Clic pour ouvrir l'index général du thème"
+                href="?page=biologique/index_biologique"> Jardinage biologique</a>
+            <div class="smenu" id="smenu2">
+                <ul>
+                    <li class="titre_menu">Généralités</li>
+                    <p class="pdf" style="margin-left: 1px;">
+                        <a href=""
+                           title="Vous allez télécharger un article de Marc Dufumier"
+                           onclick="window.open('documents/article_m_dufumier_bio.pdf', 'Article de Marc Dufumier', 'height=800, width=900, top=100, left=100, toolbar=no, menubar=no, location=no, resizable=yes, scrollbars=no, status=no');
+                                   return false;">
+                            Bio pour nourrir la planète </a>
+                    </p>
+                    <p class="pdf" style="margin-left: 1px;">
+                        <a href=""
+                           title="Vous allez télécharger un article depuis le site www.developpement-durable.gouv.fr
+                           (Nouvelle fenêtre)"
+                           onclick="window.open('documents/guide_allegations_ok.pdf', 'Guide allégat. environn...', 'height=800, width=900, top=100, left=100, toolbar=no, menubar=no, location=no, resizable=yes, scrollbars=no, status=no');
+                                   return false;">
+                            Guide allégat. environn... </a>
+                    </p>
+                    <li><a href='?page=biologique/agriculture_biologique'>Définitions
+                            et notions</a></li>
+                    <li><a href='?page=biologique/pourquoi_bio'>Pourquoi un
+                            potager bio ?</a></li>
+                    <li><a href='?page=biologique/calendrier_du_jardinage'>Calendrier
+                            du jardinage</a></li>
+                    <li><a href='?page=biologique/les_3_methodes'>Les méthodes
+                            de culture</a></li>
+                    <li><a href='?page=biologique/agriculture_responsable'>L'agriculture
+                            responsable</a></li>
+                    <li><a href='?page=biologique/refuge_lpo'
+                           title="Refuge LPO : pourquoi pas votre jardin ?"> Refuge <acronym
+                                title="Ligue pour la Protection des Oiseaux">LPO</acronym></a></li>
+                    <li><a href='?page=biologique/pollution'>La pollution</a></li>
+
+                    <li class="titre_menu"><a
+                            href="?page=biologique/preparer_le_sol">Préparer son sol</a></li>
+                    <li><a href="?page=biologique/connaitre_sol">Connaître son
+                            sol</a></li>
+                    <li><a href="?page=biologique/engrais_vert_moutarde">Engrais
+                            vert : la moutarde</a></li>
+                    <li><a href="?page=biologique/compostage">Le compostage</a></li>
+                    <li><a href="?page=biologique/mauvaises_herbes">Les
+                            "mauvaises herbes"</a></li>
+                    <li><a href="?page=traitements/engrais_les_bases">Proportions
+                            des engrais</a></li>
+                    <li><a href="?page=biologique/agriculture_de_conservation">Agriculture
+                            de conservation</a></li>
+                    <li><a href="?page=sol/restaurer_sol_pauvre">Restaurer un
+                            sol pauvre</a></li>
+
+                    <li class="titre_menu">Les plantes</li>
+                    <li><a href="?page=biologique/association_plantes">Associations
+                            de plantes</a></li>
+
+                    <li class="titre_menu"><a
+                            href="?page=biologique/traitements_bio">Traitements bio</a></li>
+
+                    <li class="titre_menu">Autres rubriques</li>
+                    <li><a href="?page=biologique/soins_bio_plantes_interieur">Soins
+                            pour plantes d'intérieur</a></li>
+                    <li><a href="?page=biologique/agriculture_naturelle">L'agriculture
+                            naturelle</a></li>
+                    <li><a href="?page=biologique/permaculture">La
+                            permaculture</a></li>
+                    <li><a href="?page=biologique/agriculture_biologique">L'agriculture
+                            biologique</a></li>
+                    <li><a href="?page=biologique/reduire_reutiliser_recycler">Réduire/Réutiliser/Recycler</a></li>
+                    <li><a href="?page=biologique/recycler">Le recyclage</a></li>
+                    <li><a href="?page=biologique/gestion_dechets">Gestion des
+                            déchets</a></li>
+                    <li><a href="?page=biologique/compostage">Compostage</a></li>
+                    <li><a href="?page=biologique/micro-agriculture_biointensive">Micro-agriculture
+                            biointensive</a></li>
+
+                    <li class="titre_menu"><a
+                            href="?page=biologique/agriculture_sauvage/index_agriculture_sauvage">
+                            Agriculture sauvage</a></li>
+                    <li><a title="Agriculture sauvage : La culture"
+                           href="?page=biologique/agriculture_sauvage/la_culture"> La
+                            culture</a></li>
+                    <li><a title="Agriculture sauvage : Les fertilisants"
+                           href="?page=biologique/agriculture_sauvage/fertilisants"> Les
+                            fertilisants</a></li>
+                    <li><a
+                            title="Agriculture sauvage : Venir à bout des mauvaises herbes"
+                            href="?page=biologique/agriculture_sauvage/mauvaises_herbes">
+                            Stop mauvaises herbes</a></li>
+                    <li><a title="Agriculture sauvage : Contrôle des « maladies »"
+                           href="?page=biologique/agriculture_sauvage/controle_des_maladies">
+                            Contrôle des «maladies»</a></li>
+                    <li><a
+                            title="Agriculture sauvage : Agriculture au milieu des mauvaises herbes"
+                            href="?page=biologique/agriculture_sauvage/parmi_mauvaises_herbes">
+                            Parmi les mauvaises herbes</a></li>
+                    <li><a
+                            title="Agriculture sauvage : Agriculture avec de la paille"
+                            href="?page=biologique/agriculture_sauvage/avec_de_la_paille">Avec
+                            de la paille</a></li>
+                    <li><a
+                            title="Agriculture sauvage : Répandre la paille non hachée"
+                            href="?page=biologique/agriculture_sauvage/repandre_paille_non_hachee">
+                            Répandre la paille</a></li>
+                    <li><a
+                            title="Agriculture sauvage : La paille enrichit la terre"
+                            href="?page=biologique/agriculture_sauvage/paille_enrichit_la_terre">
+                            La paille enrichit la terre</a></li>
+                    <li><a
+                            title="Agriculture sauvage : Pas besoin de préparer du compost"
+                            href="?page=biologique/agriculture_sauvage/pas_besoin_preparer_compost">
+                            Pas de compost</a></li>
+                    <li><a title="Agriculture sauvage : Germination"
+                           href="?page=biologique/agriculture_sauvage/germination">
+                            Germination</a></li>
+                    <li><a
+                            title="Agriculture sauvage : La paille aide à tenir tête aux mauvaises herbes et aux moineaux"
+                            href="?page=biologique/agriculture_sauvage/paille_contre_mauvaises_herbes">
+                            Paille contre herbes et oiseaux</a></li>
+                </ul>
+            </div></li>
+        <!-- fin Sous-menu Jardinage biologique  -->
+
+        <?PHP /*
+        ************************************
+        *  Sous-menu Le sol                *
+        ***********************************/
+        ?>
+        <li title="Clic pour ouvrir le présent menu" class="titre_smenu"
+            onclick="javascript:montre('smenu3');"><a
+                title="Clic pour ouvrir l'index des pages traitant du sol"
+                href='?page=sol/index_sol'>Le sol</a>
+
+            <div class="smenu" id="smenu3">
+                <ul>
+                    <li><a href='?page=sol/binage'>Le binage</a></li>
+                    <li><a href='?page=sol/carences_du_sol'>Les carences</a></li>
+                    <li><a href="?page=sol/lombric">Le lombric ou ver de terre</a></li>
+                    <hr />
+                    <li><a href="?page=sol/paillage_BRF">Bois Raméal Fragmenté</a></li>
+                    <li><a href="?page=sol/restaurer_sol_pauvre">Restaurer un
+                            sol pauvre ou aride</a></li>
+                    <li><a href="?page=sol/paillage">Le paillage des sols</a></li>
+                    <li><a href="?page=sol/paillage_2">Paillage suite</a></li>
+                    <li><a href="?page=sol/paillage_carton">Carton ondulé</a></li>
+                    <li><a href="?page=sol/erigeron_et_phlox">Erigeron et
+                            phlox mousse</a></li>
+                    <li><a href="?page=sol/paillage_tonte_gazon">Paillage de
+                            tonde d'herbe</a></li>
+                    <hr />
+                    <li><a href="?page=sol/compostage">Les bases du compostage</a></li>
+                    <li><a href="?page=sol/compost_qu_y_mettre">Que mettre sur
+                            le compost ?</a></li>
+                    <li><a href="?page=sol/compost_bon_melange">Compost : le
+                            bon mélange</a></li>
+                    <hr />
+                    <li><a href="?page=sol/sol_analyse_PH">L'analyse du sol</a></li>
+                    <li><a href="?page=sol/sol_humifere">Sol humifère</a></li>
+                    <li><a href="?page=sol/sol_argileux">Sol argileux</a></li>
+                    <li><a href="?page=sol/sol_sableux">Sol sableux</a></li>
+                    <li><a href="?page=sol/sol_calcaire">Sol calcaire</a></li>
+                    <hr />
+                    <li><a href="?page=sol/outils_pour_sol">Les outils de base</a></li>
+                    <li><a href="?page=sol/retourner_terre">Retourner la
+                            terre... ou non ?</a></li>
+                    <hr />
+                    <li><a href="?page=sol/terreau_bien-choisir-composition">Terreau,
+                            composition</a></li>
+                    <li><a href="?page=sol/terreau_bien-choisir-types">Terreau,
+                            différents types</a></li>
+                    <li><a href="?page=sol/terreau_bien-choisir-achat">Bien
+                            choisir un terreau</a></li>
+                </ul>
+            </div> <!-- fin Sous-menu de "Le sol" --></li>
+
+        <?PHP /*
+        *************************************
+        *  Sous-menu Maladies et parasites  *
+        ************************************/
+        ?>
+        <li title="Clic pour ouvrir le présent menu" class="titre_smenu"
+            onclick="javascript:montre('smenu4');"><a
+                title="Clic pour ouvrir l'index général du thème"
+                href="?page=maladiesEtPredateurs/index_maladies_et_parasites"> Maladies et parasites</a>
+
+            <div class="smenu" id="smenu4">
+                <ul>
+                    <li><a href='?page=maladiesEtPredateurs/differents_types_de_maladies'>Les
+                            différents types de maladies</a></li>
+                    <div class="stitre_smenu">Les carences :</div>
+                    <li><a href='?page=maladiesEtPredateurs/carences/carences_oligoelements'>
+                            Les carences en oligoélements</a>
+                    </li>
+                    <li><a href='?page=maladiesEtPredateurs/carences/carence_azote'>Carence en
+                            azote</a></li>
+                    <li><a href='?page=maladiesEtPredateurs/carences/carence_fer'>La chlorose
+                            ferrique</a></li>
+                    <li><a href='?page=maladiesEtPredateurs/carences/carence_magnesium_manganese'>Carence
+                            en magnésium, manganèse</a></li>
+
+                    <div class="stitre_smenu">Parasites :</div>
+                    <li><a href="?page=maladiesEtPredateurs/predateurs">Les prédateurs des
+                            plantes</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/carpocapse_pommes">La
+                            carpocapse des pommes</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/cochenilles">Les cochenilles</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/hanneton">Le hanneton ou ver
+                            blanc</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/puceron_cendre_pommier">Puceron
+                            cendré du pommier</a></li>
+
+                    <div class="stitre_smenu">Maladies :</div>
+                    <li><a href="?page=maladiesEtPredateurs/cloque_pecher">La cloque du
+                            pêcher</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/entomosporiose">L'entomosporiose</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/fumagine">La fumagine</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/mildiou_tomate">Le mildiou de
+                            la tomate</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/mildiou_vigne">Le mildiou de
+                            la vigne</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/moniliose">La moniliose</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/oidium">L'oïdium ou maladie du
+                            blanc</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/rouille">La rouille</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/tavelure_pommier-poirier">Tavelure
+                            du pommier et du poirier</a></li>
+
+                    <div class="stitre_smenu">Autres :</div>
+                    <li><a href='?page=maladiesEtPredateurs/auxiliaires'>Les auxiliaires
+                            au jardin bio</a></li>
+                    <li><a href="?page=maladiesEtPredateurs/poirier_pb">Les problèmes du
+                            poirier</a></li>
+                </ul>
+            </div> <!-- fin Sous-menu Maladies et parasites  --></li>
+
+        <?PHP
+        /*
+        *************************************
+        *  Sous-menu Culture des plantes    *
+        *************************************
+        */
+        ?>
+        <li title="Clic pour ouvrir le présent menu" class="titre_smenu"
+            onclick="javascript:montre('smenu5');"><a
+                title="Clic pour ouvrir l'index général du thème"
+                href="?page=culture/index_culture"> Culture légumes et plantes</a>
+            <div class="smenu" id="smenu5">
+                <ul>
+                    <h3>Notions utiles</h3>
+                    <li><a href="?page=culture/climats">Les différents climats
+                            de France</a></li>
+                    <li><a href="?page=culture/calendrier_semis_legumes">Calendrier
+                            semis des légumes</a></li>
+                    <li><a href="?page=culture/calendrier_semis_fleurs">Calendrier
+                            semis des fleurs</a></li>
+                    <li><a href='?page=biologique/calendrier_du_jardinage'>Calendrier
+                            du jardinage</a></li>
+                    <li><a href="?page=culture/buttage_legumes">Butter les
+                            légumes</a></li>
+                    <li><a href="?page=culture/culture_sous_abri">La culture
+                            sous abri</a></li>
+                    <li><a href="?page=biologique/mauvaises_herbes">Les
+                            "mauvaises" herbes</a></li>
+                    <li><a href="?page=culture/eloigner_chat_jardin_potager">Eloigner
+                            les chats du jardin</a></li>
+                    <li><A href="?page=culture/gain_place">Gain de place ?</a></li>
+                    <li><A href="?page=culture/potager_paysager">Potager
+                            paysager</a></li>
+                    <li><A href="?page=culture/culture_carre_1">La culture en
+                            carré</a></li>
+                    <li><A href="?page=culture/potager_en_lasagne">Terre
+                            pauvre : potager en lasagne</a></li>
+                    <li><A href="?page=culture/association_plantes">Association
+                            des plantes</a></li>
+                    <li><A href="?page=culture/recolte_graines">Récoltez vos
+                            graines</a></li>
+                    <li><A href="?page=culture/ombre">De l'ombre pour les
+                            légumes</a></li>
+                    <li><A href="?page=culture/montee-en-graines">La montée en
+                            graines</a></li>
+                    <li><A href="?page=culture/utiliser_terre_taupiniere">Récupérez
+                            la terre de taupinière</a></li>
+
+                    <hr />
+                    <h3>Légumes</h3>
+                    <li><a href="?page=culture/legume_oublies">Des légumes
+                            "oubliés"</a></li>
+                    <li><a href="?page=culture/carotte">Des carottes sans
+                            maladies</a></li>
+                    <li><a href="?page=culture/tomate_semis">Semons et
+                            cultivons la tomate</a></li>
+
+                    <hr />
+                    <h3>Pratique, déco</h3>
+                    <li><a href="?page=culture/hotel_a_insectes">Fabrique un
+                            hôtel à insectes</a></li>
+                    <li><a href="?page=culture/installer_pepiniere">Installer
+                            une pépinière au jardin</a></li>
+                    <li><a href="?page=culture/fleurir_potager">Fleurir le
+                            potager</a></li>
+                    <li><a href="?page=culture/decorer_un_mur">Décorer et
+                            utiliser un mur</a></li>
+                    <li><a href="?page=culture/semer_noyau_peche">Semer des
+                            noyaux de pêche</a></li>
+
+                    <hr />
+                    <h3>Autres / Aromatiques</h3>
+                    <li><a href="?page=culture/ananas_pot">Un ananas en pot</a></li>
+                </ul>
+            </div> <!-- fin Sous-menu Maladies et parasites  --></li>
+
+        <?PHP /*
+        ****************************************
+        *  Sous-menu des plantes aromatiques   *
+        ****************************************/
+        ?>
+        <li title="Clic pour ouvrir le présent menu" class="titre_smenu"
+            onclick="javascript:montre('smenu6');"><a
+                title="Clic pour ouvrir l'index général du thème"
+                href="?page=aromatiques/index_aromatiques"> Aromatiques et épices</a>
+
+            <div class="smenu" id="smenu6">
+                <ul>
+                    <h3>Aromatiques</h3>
+                    <li><a href="?page=aromatiques/liste_aromatiques">Liste
+                            des plantes arômatiques</a></li>
+                </ul>
+                <ul>
+                    <h3>Epices</h3>
+                    <li><a href="?page=aromatiques/liste_epices">Liste des
+                            épices</a></li>
+                    <li><a href="?page=aromatiques/_asso_epice-plat">Association
+                            épice/plat</a></li>
+                    <li class="stitre_smenu"><a
+                            href="?page=aromatiques/dictionnaire_epices">Dictionnaire des
+                            épices</a></li>
+                    <ul>
+                        <li><a href="?page=aromatiques/badiane">La badiane</a></li>
+                        <li><a href="?page=aromatiques/cacao">Le cacao</a></li>
+                        <li><a href="?page=aromatiques/canelle">La canelle</a></li>
+                        <li><a href="?page=aromatiques/cardamome">La cardamome</a></li>
+                        <li><a href="?page=aromatiques/carvi">Le carvi</a></li>
+                        <li><a href="?page=aromatiques/clou_de_girofle">Le clou de girofle</a></li>
+                        <li><a href="?page=aromatiques/coriandre_2">La coriandre</a></li>
+                        <li><a href="?page=aromatiques/cumin">Le cumin</a></li>
+                        <li><a href="?page=aromatiques/curcuma">Le curcuma</a></li>
+                        <li><a href="?page=aromatiques/curry">Le curry</a></li>
+                        <li><a href="?page=aromatiques/fenugrec">Le fenugrec</a></li>
+                        <li><a href="?page=aromatiques/feve_tonka">La fève Tonka</a></li>
+                        <li><a href="?page=aromatiques/genievre">Le genièvre</a></li>
+                        <li><a href="?page=aromatiques/gingembre">Le gingembre</a></li>
+                        <li><a href="?page=aromatiques/moutarde">La moutarde</a></li>
+                        <li><a href="?page=aromatiques/4-5_epices">Mélange 4 ou 5 épices</a></li>
+                        <li><a href="?page=aromatiques/muscade">La muscade</a></li>
+                        <li><a href="?page=aromatiques/paprika">Le paprika</a></li>
+                        <li><a href="?page=aromatiques/piment_espelette">Le piment d'Espelette</a></li>
+                        <li><a href="?page=aromatiques/poivre_cubebe">Le poivre cubèbe</a></li>
+                        <li><a href="?page=aromatiques/poivre_szechuan">Poivre du Széchuan</a></li>
+                        <li><a href="?page=aromatiques/poivres">Les poivres</a></li>
+                        <li><a href="?page=aromatiques/raz-el-hanout">Raz-el-hanout</a></li>
+                        <li><a href="?page=aromatiques/reglisse">La Réglisse</a></li>
+
+                    </ul>
+                    <hr />
+                    <li><a href="?page=aromatiques/origan">L'origan, un petit goût d'Italie</a></li>
+                    <li><A href="?page=aromatiques/coriandre">Cutivez la coriandre</a></li>
+                    <li><A href="?page=aromatiques/safran">Culture et récolte du safran</a></li>
+                </ul>
+            </div>
+        </li>
+        <!-- fin Sous-menu Plantes aromatiques  -->
+
+        <?PHP /*
+        *************************************
+        *  Sous-menu Traitements            *
+        ************************************/
+        ?>
+        <li title="Clic pour ouvrir le présent menu" class="titre_smenu"
+            onclick="javascript:montre('smenu7');">
+            <a href='?page=traitements/index_traitements'
+               title="Index des pages traitant... des traitements">
+                Traitements bio
+            </a>
+
+            <div class="smenu" id="smenu7">
+                <ul>
+                    <div class="stitre_smenu">Désherbage :</div>
+                    <li><a href='?page=traitements/roundUp'>Roundup : nocif
+                            pour l'homme ?</a></li>
+                    <li><a href="?page=traitements/le_desherbage">Le
+                            désherbage</a></li>
+                    <li><a href="?page=traitements/le_desherbage_bio">Solutions
+                            bio</a></li>
+
+                    <div class="stitre_smenu">Nuisibles (?) :</div>
+                    <li><a href="?page=traitements/taupes_tres_cheres">Très
+                            chères taupes !</a></li>
+                    <li><a href="?page=traitements/taupes_pieger">Piéger la
+                            taupe</a></li>
+
+                    <div class="stitre_smenu">Traitements :</div>
+                    <li><a href="?page=traitements/arbres_traitement_automne">Traitez
+                            à la chute des feuilles</a></li>
+                    <li><a href="?page=traitements/arbres_traitement_hiver">Arbres
+                            : traitement d'hiver</a></li>
+                    <li><a
+                            href="?page=traitements/proteger_contre_limaces_escargots">Limaces
+                            et escargots</a></li>
+                    <li><a href="?page=traitements/pucerons">Exit les pucerons
+                            !</a></li>
+                    <li><a href="?page=traitements/poser_bande_glu">Poser une
+                            bande de glu</a></li>
+                    <li><a href="?page=maladies/carpocapse_pommes">Carpocapse
+                            (ver des fruits)</a></li>
+                    <li><a href="?page=traitements/ver_de_la_cerise">Ver de la
+                            cerise : lutte</a></li>
+                    <li><a href="?page=traitements/ver_de_la_cerise_piege">Ver
+                            de la cerise : piège bio</a></li>
+                    <li><a href="?page=traitements/cochenilles_traitement">Se
+                            débarasser des cochenilles</a></li>
+                    <li><a href="?page=traitements/arrosage_ete">Arroser l'été</a></li>
+                    <li><a href="?page=traitements/micro_arrosage">Micro
+                            arrosage</a></li>
+                    <li><a href="?page=traitements/micro_arrosage_installation">Micro
+                            arrosagee, installation</a></li>
+                    <div class="stitre_smenu">Produits :</div>
+                    <li><a href='?page=traitements/produits'>Les produits</a></li>
+                    <li><a href="?page=traitements/recettes_bio">Des produits
+                            maison</a></li>
+                    <li><a href="?page=traitements/recettes_bio_bis">D'autres
+                            recettes maison</a></li>
+                    <li><a href="?page=traitements/purin_ortie">Le purin
+                            d'ortie</a></li>
+                    <li><a href="?page=traitements/bouillie_bordelaise">Bouillie
+                            bordelaise</a></li>
+                    <li><a href="?page=traitements/lait_de_chaux">Le lait de
+                            chaux</a></li>
+                    <li><a href="?page=traitements/savon_marseille">Savon de
+                            Marseille</a></li>
+                    <li><a href="?page=traitements/cendres_de_bois">Cendres de
+                            bois et jardinage</a></li>
+                    <li><a href="?page=traitements/soufre">Le soufre</a></li>
+                    <div class="stitre_smenu">Les engrais :</div>
+                    <li><a href="?page=traitements/engrais_les_bases">Composants
+                            essentiels et emploi</a></li>
+                    <li><a href="?page=traitements/engrais_bio_jardineem">Jardineem
+                            , fertilisant bio-protecteur</a></li>
+                    <li><a href="?page=traitements/engrais_vert">Semer de
+                            l'engrais vert</a></li>
+                    <li><a href="?page=traitements/engrais_liberation_lente">Engrais
+                            à libération lente</a></li>
+                    <li><a href="?page=traitements/engrais_organique_naturel_bio">Engrais
+                            organiques, bio</a></li>
+                    <div class="stitre_smenu">Divers :</div>
+                    <li><a href="?page=traitements/feutre_geotextile">Feutre
+                            géotextile</a></li>
+                    <li><a href="?page=traitements/desinfection_outils">Désinfecter
+                            outils et accessoires</a></li>
+                </ul>
+            </div>
+        </li>
+        <!-- fin Sous-menu de "traitements" -->
+
+        <?PHP /*
+        *************************************
+        *  Sous-menu trucs et astuces       *
+        ************************************/
+        ?>
+        <li title="Clic pour ouvrir le présent menu" class="titre_smenu"
+            onclick="javascript:montre('smenu8');">
+            <a href='?page=trucs/index_trucs'
+               title="Accès au menu des trucs et astuces naturels et de grand-mère">trucs et astuces</a>
+
+            <div class="smenu" id="smenu8">
+                <ul>
+                    <div class="stitre_smenu">
+                        <a href="" title="Ci-dessous, quelques astuces d'utilisation de produits naturels">
+                            Produits naturels :</a>
+                    </div>
+                    <li><a href='?page=trucs/bicarbonate' 
+                           title="Quelles sont les utilités du bicarbonate de soude">
+                            Le bicarbonate de soude</a>
+                    </li>
+                    <li><a href="?page=trucs/engrais_index"
+                           title="Des engrais faits maison à usages innatendus">
+                            Les trucs sur "engrais"</a>
+                    </li>
+                    <li><a href='?page=trucs/ail' 
+                           title="Que peut-on faire avec de l'ail ?">
+                            Avec de l'ail ?</a>
+                    </li>
+                    <li><a href='?page=trucs/vinaigre_blanc' 
+                           title="15 recettes magiques d'utilisation du vinaigre blanc">
+                            Le Vinaigre blanc</a>
+                    </li>
+                    <li><a href='?page=trucs/citron' 
+                           title="On peut également utiliser du citron, mais c'est plus cher">
+                            Et aussi le citron</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <!-- fin Sous-menu de "trucs et astuces" -->
+
+        <?PHP /*
+        *************************************
+        *  Sous-menu "Un peu de cuisine"    *
+        ************************************/
+        ?>
+        <li title="Clic pour ouvrir le présent menu" class="titre_smenu"
+            onclick="javascript:montre('smenu9');"><a
+                title="Clic pour toutes les recettes"
+                href="?page=cuisine/index_cuisine">Un peu de cuisine ?</a>
+            <div class="smenu" id="smenu9">
+                <ul>
+                    <li><a href="?page=cuisine/avant_propos">Avant propos</a></li>
+                    <li class="titre_menu">Les plantes :</li>
+                    <li><a href="index.php?page=cuisine/amarante_bouchees">Bouchées
+                            à l'amarante</a></li>
+                    <li><a href="?page=cuisine/amarante">L'amarante</a></li>
+                    <li><a href="?page=cuisine/rhubarbe">Recettes de rhubarbe</a></li>
+
+                    <li class="titre_menu">Les fleurs :</li>
+                    <li><a href="?page=cuisine/fleurs_commesibles_avertissement">Avertissement</a></li>
+                    <li><a href="?page=cuisine/acacia">Acacia : beignets et
+                            confit</a></li>
+                    <li><a href="?page=cuisine/achilee">Vinaigre d'achilée</a></li>
+                    <li><a href="?page=cuisine/alliaire">L'alliaire : vinaigre
+                            et beurre</a></li>
+                    <li><a href="?page=cuisine/agastache">Gratin de courgettes
+                            à l’agastache</a></li>
+                    <li><a href="?page=cuisine/arroche">Gratin d'arroche</a></li>
+                    <li><a href="?page=cuisine/begonia">Soupe au bégonia</a></li>
+                    <li><a href="?page=cuisine/bourrache">Bourrache :
+                            soupe/pain</a></li>
+                    <li><a href="?page=cuisine/crevettes_canape">Crevettes à
+                            la bourrache</a></li>
+                    <li><a href="?page=cuisine/bourse_a_pasteur">Bourse à
+                            pasteur</a></li>
+                    <li><a href="?page=cuisine/capucine">Velouté de capucine</a></li>
+                    <li><a href="?page=cuisine/capucine_et_sariette">Capucine
+                            et sarriette</a></li>
+                    <li><a href="?page=cuisine/chrysanthemes">Truite aux
+                            chrysanthèmes</a></li>
+                    <li><a href="?page=cuisine/creme_geranium">Crème au
+                            géranium</a></li>
+                    <li><a href="?page=cuisine/glycine">Glycine en beignets</a></li>
+                    <li><a href="?page=cuisine/jacinthes_et_primeveres">Jacinthe
+                            et primevère</a></li>
+                    <li><a href="?page=cuisine/lavande">Lavande</a></li>
+                    <li><a href="?page=cuisine/lilas">Lilas</a></li>
+                    <li><a href="?page=cuisine/pissenlit">Le pissenlit</a></li>
+                    <li><a href="?page=cuisine/sureau">Le sureau</a></li>
+                    <li><a href="?page=cuisine/violette">La violette</a></li>
+
+                    <li class="titre_menu">Autres parties</li>
+                    <li><a href="?page=cuisine/epluchures"
+                           title="Ne jetez pas les fanes de carottes et de radis, ni les peaux des fruits ! Voici des recettes gourmandes et légères qui vous permettront de les utiliser et de faire des économies.">
+                            Cuisinons les épluchures !</a></li>
+                    <li><a href="?page=cuisine/ortie">Ortie</a></li>
+                    <li><a href="?page=cuisine/ortie_soupe">Soupe d'ortie</a></li>
+                    <li class="titre_menu">Divers</li>
+                    <li><a href="?page=cuisine/agar-agar">Gélifiant :
+                            agar-agar</a></li>
+                    <li><a href="?page=cuisine/agar-agar_recettes">Recettes à
+                            base d'agar-agar</a></li>
+                    <li><a
+                            href="http://www.les-additifs-alimentaires.com/liste-tous-loi.php"
+                            title="Accès au site répertoriant tous les additifs, et leur degré de dangerosité"
+                            target="_blank"> Les additifs alimentaires</a></li>
+                    <li><a title="Liste des additifs alimentaires sur Wikipédia"
+                           href="http://fr.wikipedia.org/wiki/liste_des_additifs_alimentaires"
+                           target="_blank">Les additifs (wikipedia)</a></li>
+                </ul>
+            </div> <!-- fin Sous-menu de "Un peu de cuisine" --></li>
+    </ul> <br /> <?PHP /*
+    *************************************
+    *  Sous-menu "mes autres sites "    *
+    ************************************/
+    ?>
+    <div class="titre_menu">
+        <b class="externe" title="Ouvree une nouvelle fenêtre"> Mes autres
+            sites&nbsp;</b>
+    </div>
+    <div class="imageBulle">
+        <a href="?page=en_construction"
+           onmouseover="javascript:actualite('info_bowling');"
+           title="Bientôt disponible" alt="Bientôt disponible"> <img
+                src="images/gest/boule_bowling_animee.gif" alt"Professeur de bowling"/>
+                <br /> Mon prof<br />de bowling
+        </a>
+    </div> <!-- ce bloc s'affichera au passage de la souris sur le bloc ci-dessus -->
+    <div id="info_bowling"
+         style="position: absolute; margin-left: 100px; visibility: hidden;"
+         class="petitblocG"></div>
+    <div class="imageBulle">
+        <a href="http://exomuscusante.christian-alcon.comule.com/"
+           onmouseover="javascript:actualite('info_exo');"
+           title="Exercices et étirements" alt="Exercices et étirements">
+            <img src="images/gest/affiner_hanches.gif"
+                 alt="Exercices et étirements" /> <br /> Exercices de<br />(re)<br />mise
+            en forme
+        </a>
+    </div> <!-- ce bloc s'affichera au passage de la souris sur le bloc ci-dessus -->
+    <div id="info_exo"
+         style="position: absolute; margin-left: 200px; visibility: hidden;"
+         class="petitblocG"></div>
+    <div class="imageBulle">
+        <a href="http://gizmo.christian-alcon.comule.com"
+           title="La vie trépidente du chat Gizmo"
+           alt="La vie trépidente du chat Gizmo" target="_blank"> <img
+                src="images/gest/gizmo.jpg" alt="La vie trépidente du chat Gizmo" />
+            <br /> Gizmo le chat
+        </a>
+    </div>
+    <div class="step"></div> <?PHP /*
+    *************************************
+    *  Sous-menu "sites amis"           *
+    ************************************/
+    ?>
+    <div class="titre_menu">
+        <b>Contacts</b>
+    </div> 
+    <!--
+    <?PHP  /*
+    $dest = "Cricri-28@christian-alcon.comule.com";
+    $mess = "Veuillez décrire ci-dessous le contenu de votre message";
+    echo "<a href='mailto:" . $dest . "?subject=" . $page_courante . "&body=" . $mess . "'>";
+    echo "<div class='imageG transparent'>";
+    echo "<img title=\"Pour contacter l'administrateur (lien manquant, suggestions, remarques, idées, ...)\"
+         src=\"images/gest/e-mail-050.gif\" width=\"60%\"><br />";
+    echo "<i>Contactez<br />l'administrateur<br />par mail</i></div>";
+    echo "</a>"; */
+  ?>
+    -->
+    <a href="?page=app/gestion/mail_a_admin">
+        <div class="imageG transparent">
+            <img
+                title="Pour contacter l'administrateur (lien manquant, suggestions, remarques, idées, ...)"
+                src="/public/img/common/e-mail-050.gif" style="width: 40%;">
+            <br />
+            <i>Contactez<br />
+                l'administrateur<br />
+                par mail
+            </i>
+        </div>
+    </a> 
+    <a
+        href="?page=app/gestion/recommandation_site&source=<?PHP echo $page_visitee ?>">
+        <div class="imageD transparent">
+            <img title="Ce site vous a plu, recommandez-le à un ami"
+                 src="/public/img/common/coeur_034.gif" style="width: 40%;"><br /> <i>Ce
+                site vous a plu,<br /> recommandez-le<br /> à un ami
+            </i>
+        </div>
+    </a> <br />
+    <!--<div class="step"></div>-->
