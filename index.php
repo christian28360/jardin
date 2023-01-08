@@ -1,14 +1,18 @@
 ﻿<?php
-
 //namespace \;
 
 session_start();
 
+use App\Controller\ConfigController;
+use Symfony\Component\Yaml\Yaml;
+
 // charge les fonctions, les accès à la BdD, les cookies, ...
 require_once("app/common/global.php");
+require_once("src/Controller/ConfigController.php");
+
+$fn->debug(ConfigController::BDD_NAME);
 
 //$fn->debug('Version PHP courante : ' . phpversion() . ', environnement : ' . $environnement);
-
 ////On se connecte à MySQL
 //$dsn = 'mysql:host = ' . $DB_HOST . ';dbname = ' . $DB_NAME;
 //$username = $DB_USER;
@@ -27,7 +31,6 @@ require_once("app/common/global.php");
 //} catch (Exception $e) {
 //    die('<hr><h4>Erreur : ' . $e->getMessage());
 //}
-
 //
 //$site = "jardin";
 //
@@ -79,6 +82,30 @@ echo "<tbody>\n<tr>\n";
 // corps de la page
 echo "\n\n<!-- DEBUT DU CORPS : POUR REPERAGE LORS DE L'AFFICHAGE DU CODE SOURCE DANS LE NAVIGATEUR CLIENT  -->\n";
 echo "\n<td id='corps'>\n<a id='Top'></a>\n";
+
+//use Symfony\Component\Yaml\Yaml;
+//
+//require_once(__DIR__ . '/vendor/autoload.php');
+
+$customer = array(
+    "id" => 123,
+    "first_name" => "Programster",
+    "last_name" => "Page"
+);
+
+$obj = array(
+    "id" => 34843,
+    "date" => "2001-01-23",
+    "customer" => $customer,
+    "comments" => "Late afternoon is best. Backup contact is Nancy Billsmer @ 338-4338."
+);
+
+// generate a YAML representation of the invoice
+//$myYaml = Yaml::parseFile(__DIR__ . "\config\config.yaml");
+//$fn->debug($myYaml ["parameters"]["application"]["description"]);
+//
+//print_r("<hr><h1>" . ConfigController::phpInfosAction ["parameters"]["application"]["description"] . "<hr>");
+//print_r("<hr><h2>". ConfigController::$titi."//xxxx//<hr>");
 
 include $corps;
 
