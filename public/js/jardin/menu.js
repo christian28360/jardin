@@ -54,6 +54,7 @@ function AjoutOnClick() {
 }
 
 function menu() {
+    alert("js.menu");
     $("#extruderLeft").buildMbExtruder({
         position: "left",
         width: 315,
@@ -63,7 +64,11 @@ function menu() {
         hidePanelsOnClose: true,
         accordionPanels: true,
         onExtOpen: function () {},
-        onExtContentLoad: function () {},
+//        onExtContentLoad: function () {},
+        onExtContentLoad: function (ext) {
+            alert("loaded");
+            console.debug("loaded", ext)
+        },
         onExtClose: function () {}
     });
 }

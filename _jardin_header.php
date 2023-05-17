@@ -2,8 +2,7 @@
 <head>
     <?PHP
     $ua = $fn->getBrowser(null, true);  // on récupère les infos techniques (navig., moteur ...)
-    $fn->debug($ua);
-
+//    $fn->debug($ua);
     // ouverture du fichier qui sera chargé dans le corps
     // rechercher dans ce fichier la 1ère balise <h1> pour ensuite charger son contenu à la fin de la balise <title>
     $html = "";
@@ -45,17 +44,22 @@
     <meta name="robots" content="index, follow, all" />
     <meta name="GENERATOR" content="NetBeans IDE v12" />
 
-    <link rel="icon" type="image/x-icon" href="/app/images/favicon.ico" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link 
+        rel="icon" 
+        type="image/x-icon" 
+        href="/public/img/favicon.ico"
+        />
+    <!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />-->
     <link 
         type="text/css" 
         rel="stylesheet" 
         href="/public/css/jardin.css" 
         />
 
-    <!--  REFERENCEMENT GOOGLE : NE PAS SUPPRIMER LES BALISEs QUI SUIVENT -->
+    <!--  REFERENCEMENT GOOGLE : NE PAS SUPPRIMER LES BALISEs QUI SUIVENT 
     <meta name="google-site-verification"
           content="hwL34DpmpTQmxc9oNmlowo1G5HdCII3Pack4MrbweMg" />
+    -->
     <script
         type="text/javascript" 
         language="Javascript" 
@@ -69,15 +73,15 @@
         >
     </script>
 
-    <?PHP // Ajout de JQuery components ?>
-    <link type="text/css" href="/inc/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+    <?PHP // Ajout de JQuery components  ?>
+    <!--<link type="text/css" href="/inc/jquery-ui-1.8.23.custom.css" rel="stylesheet" />-->
     <script 
         src="/public/js/jQuery/jquery-3.6.0.min.js" 
         type="text/javascript"
         defer
         >
     </script>
-    <script src="/inc/jquery-ui.js" type="text/javascript"></script>
+    <!--<script src="/inc/jquery-ui.js" type="text/javascript"></script>-->
 
     <?PHP /*
       ~ jquery.mb.components
@@ -86,13 +90,15 @@
       ~ site: http://pupunzi.com
      */
     ?>
-    <!--jquery.mb.extruder-master<link type="text/css" media="all" href="/inc/mbExtruder.css" rel="stylesheet" />-->
+    <!-- jquery.mb.extruder-master
+    <link type="text/css" media="all" href="/inc/mbExtruder.css" rel="stylesheet" />
     <link type="text/css" href="/inc/jquery.mb.extruder-master/css/mbExtruder.css" rel="stylesheet" />
     <script type="text/javascript" src="/inc/jquery.hoverIntent.min.js"></script>
     <script type="text/javascript" src="/inc/jquery.metadata.js"></script>
     <script type="text/javascript" src="/inc/jquery.mb.flipText.js"></script>
-    <!--<script type="text/javascript" src="/inc/mbExtruder.js"></script>-->
+    <script type="text/javascript" src="/inc/mbExtruder.js"></script>
     <script type="text/javascript" src="/inc/jquery.mb.extruder-master/inc/mbExtruder.js"></script>
+    -->
     <!-- Mes fonctions JQuery -->
     <script 
         type="text/javascript" 
@@ -101,15 +107,44 @@
         >
     </script>
 
+    <!--  mb.extruder  -->
+    <link 
+        href="/public/libraries/jquery.mb.extruder-master/css/mbExtruder.css" 
+        media="all" 
+        rel="stylesheet" 
+        type="text/css"
+        />
+    <!--    
+        <script 
+            type="text/javascript" 
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"
+            >
+        </script>
+    -->
+    <script 
+        type="text/javascript" 
+        src="/public/libraries/jquery.mb.extruder-master/inc/jquery.hoverIntent.min.js"
+        >
+    </script>
+    <script 
+        type="text/javascript" 
+        src="/public/libraries/jquery.mb.extruder-master/inc/jquery.mb.flipText.js"
+        >
+    </script>
+    <script 
+        type="text/javascript" 
+        src="/public/libraries/jquery.mb.extruder-master/inc/mbExtruder.js"
+        >
+    </script>
     <script type="text/javascript">
         // quand page chargée
-        $(document).ready(function () {
-            menu(); // charge fonction mb.extruder pour affichage menu
-            InitMenu(); // active les boutons pour afficher/masquer les sous-menus
-        });
+//        $(document).ready(function () {
+        menu(); // charge fonction mb.extruder pour affichage menu
+        InitMenu(); // active les boutons pour afficher/masquer les sous-menus
+//        });
     </script>
 
-    <!-- SCRIPT POUR GOOGLE ANALYTICS -->
+    <!-- SCRIPT POUR GOOGLE ANALYTICS 
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-20317881-1']);
@@ -124,15 +159,16 @@
             s.parentNode.insertBefore(ga, s);
         })();
     </script>
-    <!-- FIN DU SCRIPT POUR GOOGLE ANALYTICS  -->
+    FIN DU SCRIPT POUR GOOGLE ANALYTICS  -->
 </head>
 
 <body>
     <div id="extruderLeft"
          class="{
-             title:'Cliquez pour accéder aux menus', url:('_jardin_menu.html')
+             title:'Cliquez pour accéder aux menus', url:'/_jardin_menu.html'
          }">
     </div>
+
     <!-- Table globale de tout le html fermée dans footer -->
     <table>
         <tbody>
@@ -168,7 +204,7 @@
                                     INFOS TECHNIQUES (Navigateur, système ...)  
                                     ce bloc s'affichera au passage de la souris
                                     -->
-                                    <?PHP // include 'app/common/fragments/actu.html'; ?>
+                                    <?PHP // include 'app/common/fragments/actu.html';  ?>
                                     <?PHP // include_once 'app/common/fragments/infosTechniques.php'; ?>
                                 </td>
                                 <td class="entete">
